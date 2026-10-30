@@ -1,0 +1,82 @@
+{
+  "updatedAt": "2026-10-30T10:18:00+09:00",
+  "apps": [
+    {
+      "id": "story-reader",
+      "nameKo": "스토리리더",
+      "nameEn": "Story Reader",
+      "version": "0.3.1",
+      "versionCode": 4,
+      "icon": "assets/icons/story-reader.png",
+      "summary": "독자의 선택과 상태값에 따라 문장이 다르게 엮이는 인터랙티브 무협 서사 리더",
+      "targetOs": "Android 8.0+ (API 26+)",
+      "offline": true,
+      "updated": "2026-10-28",
+      "packages": [
+        {
+          "type": "release",
+          "label": "정식 릴리즈 APK (권장)",
+          "filename": "StoryReader_0.3.1_release.apk",
+          "size": "33.1 MB",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.3.1_release.apk",
+          "primary": true
+        },
+        {
+          "type": "debug",
+          "label": "개발 디버그 APK",
+          "filename": "StoryReader_0.3.1_debug.apk",
+          "size": "34.6 MB",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.3.1_debug.apk",
+          "primary": false
+        }
+      ],
+      "changelog": [
+        "W12: 서막 주력 초식 및 설전 수(허점 찌르기·뜻 떠보기 등) 직접 지정",
+        "W12: 완독 후 정산 카드에서 결정타 무공 뱃지 및 합별 공방 요약(Clash Logs) 제공",
+        "W12: 인물 성품 카드 3슬롯 시각화 및 동료 유대(Bond) 게이지 연동",
+        "W12: 무공 경지 돌파 진척도 및 누적 내공(갑자/년) 운기 카드 배치",
+        "W12: 여정 탭 사건 줄기(Arcs) 퀘스트북 진행률(%) 목록 제공",
+        "W11: 책장 최상단 원터치 '이어 읽기' 및 마지막 읽던 문단 자동 스크롤 복원",
+        "W11: 오디오북 TTS 낭독(금빛 문단 하이라이트 + 자동 스크롤 + 3단계 배속)",
+        "W11: 글자 크기, 줄 간격, 양피지/어둡게/밝게 독서 맞춤 설정 및 로컬 영구 보관"
+      ]
+    },
+    {
+      "id": "story-math",
+      "nameKo": "스토리매스",
+      "nameEn": "Story Math",
+      "version": "1.2.0",
+      "versionCode": 8,
+      "icon": "assets/icons/story-math.png",
+      "summary": "초등 1~6학년 수학 교과과정을 탐험과 모험으로 풀어가는 인터랙티브 스토리 수학",
+      "targetOs": "Android 8.0+ (API 26+)",
+      "offline": true,
+      "updated": "2026-10-29",
+      "packages": [
+        {
+          "type": "release-standard",
+          "label": "표준 릴리즈 APK (일반 폰/태블릿)",
+          "filename": "StoryMath_1.2.0_standard_release.apk",
+          "size": "7.6 MB",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.2.0_standard_release.apk",
+          "primary": true
+        },
+        {
+          "type": "release-pleos",
+          "label": "Pleos 전용 릴리즈 APK",
+          "filename": "StoryMath_1.2.0_pleos_release.apk",
+          "size": "19.3 MB",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.2.0_pleos_release.apk",
+          "primary": false
+        }
+      ],
+      "changelog": [
+        "1.2.0: 설정 옵션(글자 크기, 낭독 속도, 볼륨 조절) 고도화",
+        "1.1.1: 스마트폰 세로 및 가로 화면 자동 적응형 레이아웃 완성",
+        "1.1.0: 12막 146단원 초등 전수 수학 커리큘럼 연동",
+        "온디바이스 네이티브 TTS 음성 낭독 및 상황별 효과음",
+        "브랜딩: 신규 고해상도 공식 512px 앱 아이콘 적용"
+      ]
+    }
+  ]
+}

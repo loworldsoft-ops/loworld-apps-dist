@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>로월드소프트 앱 배포 센터 | LoworldSoft Apps</title>
+  <meta name="description" content="로월드소프트 모바일 안드로이드 애플리케이션 공식 배포 및 테스트 포털">
+  <link rel="icon" type="image/png" href="assets/icons/story-reader.png">
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card-bg: rgba(22, 29, 49, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --primary: #3b82f6;
+      --primary-hover: #2563eb;
+      --primary-glow: rgba(59, 130, 246, 0.25);
+      --accent: #10b981;
+      --amber: #f59e0b;
+      --font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.08) 0px, transparent 50%);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px 48px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 880px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 20px 0 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #60a5fa;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 2.1rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      max-width: 540px;
+      line-height: 1.5;
+    }
+
+    /* Notice Banner */
+    .banner {
+      background: rgba(30, 41, 59, 0.7);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-radius: 12px;
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.9rem;
+      line-height: 1.45;
+      color: #cbd5e1;
+      backdrop-filter: blur(8px);
+    }
+    .banner-icon { font-size: 1.3rem; flex-shrink: 0; }
+
+    /* App Cards Grid */
+    .cards-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .app-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .app-card:hover {
+      border-color: rgba(59, 130, 246, 0.35);
+    }
+
+    .app-head {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .app-icon {
+      width: 76px;
+      height: 76px;
+      border-radius: 18px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+      object-fit: cover;
+      flex-shrink: 0;
+      background: #1e293b;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .app-titles {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .app-title-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .app-name {
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(59, 130, 246, 0.15);
+      color: #93c5fd;
+      border: 1px solid rgba(59, 130, 246, 0.3);
+    }
+    .tag.green {
+      background: rgba(16, 185, 129, 0.15);
+      color: #6ee7b7;
+      border-color: rgba(16, 185, 129, 0.3);
+    }
+
+    .app-summary {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.4;
+      margin-top: 2px;
+    }
+
+    /* Meta Info Grid */
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 10px;
+      padding: 12px 14px;
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 12px;
+      font-size: 0.82rem;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+    }
+    .meta-item { display: flex; flex-direction: column; gap: 2px; }
+    .meta-label { color: #64748b; font-weight: 500; }
+    .meta-val { color: #e2e8f0; font-weight: 600; }
+
+    /* Action Section (Buttons + QR) */
+    .action-row {
+      display: flex;
+      gap: 20px;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+
+    .btn-group {
+      flex: 1;
+      min-width: 260px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-size: 0.98rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.15s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+      color: #ffffff;
+      box-shadow: 0 4px 14px var(--primary-glow);
+    }
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+      transform: translateY(-1px);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.06);
+      color: #cbd5e1;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+    }
+
+    .qr-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      width: 144px;
+      flex-shrink: 0;
+    }
+    .qr-canvas {
+      width: 110px;
+      height: 110px;
+    }
+    .qr-label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: #334155;
+      margin-top: 6px;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    /* Changelog Accordion */
+    details {
+      background: rgba(15, 23, 42, 0.45);
+      border-radius: 10px;
+      padding: 10px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      font-size: 0.86rem;
+    }
+    summary {
+      font-weight: 600;
+      color: #94a3b8;
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    summary:hover { color: #cbd5e1; }
+    .changelog-list {
+      margin-top: 10px;
+      padding-left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      color: #cbd5e1;
+      line-height: 1.45;
+    }
+
+    /* Guide Section */
+    .guide-card {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .guide-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #f8fafc;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+    .step-item {
+      background: rgba(15, 23, 42, 0.5);
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .step-num {
+      font-size: 0.72rem;
+      font-weight: 800;
+      color: #38bdf8;
+      letter-spacing: 0.5px;
+    }
+    .step-desc {
+      font-size: 0.84rem;
+      color: #cbd5e1;
+      line-height: 1.4;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 36px;
+      color: #64748b;
+      font-size: 0.82rem;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    footer a { color: #94a3b8; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 640px) {
+      .app-head { flex-direction: column; align-items: flex-start; }
+      .action-row { flex-direction: column-reverse; align-items: center; }
+      .qr-container { display: none; } /* On phone, hide QR by default since user is already on phone */
+      .btn-group { width: 100%; }
+      h1 { font-size: 1.7rem; }
+    }
+  </style>
+  <script src="assets/qrcode.min.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="brand-badge">⚡ LoworldSoft Distribution Hub</div>
+      <h1>로월드소프트 모바일 앱 배포 센터</h1>
+      <p class="subtitle">인증이나 로그인 없이 최신 안드로이드 애플리케이션(APK)을 직접 다운로드하고 즉시 테스트할 수 있는 공식 배포 포털입니다.</p>
+    </header>
+
+    <!-- Notice Banner -->
+    <div class="banner">
+      <div class="banner-icon">📱</div>
+      <div>
+        <strong>모바일 접속 팁:</strong> 스마트폰에서 접속하셨다면 원하는 앱의 <b>[APK 다운로드]</b> 버튼을 누르면 기기에 바로 설치 파일이 다운로드됩니다. PC에서는 화면의 <b>QR 코드</b>를 폰 카메라로 스캔하세요.
+      </div>
+    </div>
+
+    <!-- App Cards -->
+    <main class="cards-list" id="appsContainer">
+      <!-- Dynamic render via JS -->
+    </main>
+
+    <!-- Installation Guide -->
+    <section class="guide-card">
+      <div class="guide-title">
+        <span>⚙️</span> 안드로이드 APK 설치가 처음이신가요?
+      </div>
+      <div class="steps">
+        <div class="step-item">
+          <div class="step-num">STEP 01</div>
+          <div class="step-desc">APK 다운로드 버튼 클릭 또는 카메라로 QR 코드를 스캔합니다.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">STEP 02</div>
+          <div class="step-desc">"유해한 파일일 수 있음" 경고 시 [무시하고 다운로드]를 누릅니다.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">STEP 03</div>
+          <div class="step-desc">다운로드된 파일을 열고 [설정] &gt; [이 출처의 앱 허용]을 켭니다.</div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">STEP 04</div>
+          <div class="step-desc">[설치] 버튼을 누르면 설치가 완료되며 바로 앱을 즐기실 수 있습니다!</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div>© 2026 LoworldSoft Inc. All rights reserved.</div>
+      <div>문의 및 피드백: <a href="mailto:loworldsoft@gmail.com">loworldsoft@gmail.com</a> | <a href="https://github.com/loworldsoft-ops" target="_blank">GitHub Organization</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // Inlined data as fallback, also fetches apps.json if available
+    const fallbackData = {
+      "apps": [
+        {
+          "id": "story-reader",
+          "nameKo": "스토리리더",
+          "nameEn": "Story Reader",
+          "version": "0.3.1",
+          "versionCode": 4,
+          "icon": "assets/icons/story-reader.png",
+          "summary": "독자의 선택과 상태값에 따라 문장이 다르게 엮이는 인터랙티브 무협 서사 리더 (오프라인 지원)",
+          "targetOs": "Android 8.0+ (API 26+)",
+          "updated": "2026-10-28",
+          "packages": [
+            {
+              "type": "release",
+              "label": "정식 릴리즈 APK 다운로드",
+              "size": "33.1 MB",
+              "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.3.1_release.apk",
+              "primary": true
+            },
+            {
+              "type": "debug",
+              "label": "개발 디버그 APK 다운로드",
+              "size": "34.6 MB",
+              "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.3.1_debug.apk",
+              "primary": false
+            }
+          ],
+          "changelog": [
+            "W12: 서막 주력 초식 및 설전 수(허점 찌르기·뜻 떠보기 등) 직접 지정",
+            "W12: 완독 후 정산 카드에서 결정타 무공 뱃지 및 합별 공방 요약(Clash Logs) 제공",
+            "W12: 인물 성품 카드 3슬롯 시각화 및 동료 유대(Bond) 게이지 연동",
+            "W12: 무공 경지 돌파 진척도 및 누적 내공(갑자/년) 운기 카드 배치",
+            "W12: 여정 탭 사건 줄기(Arcs) 퀘스트북 진행률(%) 목록 제공",
+            "W11: 책장 최상단 원터치 '이어 읽기' 및 마지막 읽던 문단 자동 스크롤 복원",
+            "W11: 오디오북 TTS 낭독(금빛 문단 하이라이트 + 자동 스크롤 + 3단계 배속)",
+            "W11: 글자 크기, 줄 간격, 양피지/어둡게/밝게 독서 맞춤 설정 및 로컬 영구 보관"
+          ]
+        },
+        {
+          "id": "story-math",
+          "nameKo": "스토리매스",
+          "nameEn": "Story Math",
+          "version": "1.2.0",
+          "versionCode": 8,
+          "icon": "assets/icons/story-math.png",
+          "summary": "초등 1~6학년 수학 교과과정을 탐험과 모험으로 풀어가는 인터랙티브 스토리 수학 게임",
+          "targetOs": "Android 8.0+ (API 26+)",
+          "updated": "2026-10-29",
+          "packages": [
+            {
+              "type": "release-standard",
+              "label": "표준 릴리즈 APK 다운로드",
+              "size": "7.6 MB",
+              "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.2.0_standard_release.apk",
+              "primary": true
+            },
+            {
+              "type": "release-pleos",
+              "label": "Pleos 전용 릴리즈 APK 다운로드",
+              "size": "19.3 MB",
+              "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.2.0_pleos_release.apk",
+              "primary": false
+            }
+          ],
+          "changelog": [
+            "1.2.0: 설정 옵션(글자 크기, 낭독 속도, 볼륨 조절) 고도화",
+            "1.1.1: 스마트폰 세로 및 가로 화면 자동 적응형 레이아웃 완성",
+            "1.1.0: 12막 146단원 초등 전수 수학 커리큘럼 연동",
+            "온디바이스 네이티브 TTS 음성 낭독 및 상황별 효과음",
+            "브랜딩: 신규 고해상도 공식 512px 앱 아이콘 적용"
+          ]
+        }
+      ]
+    };
+
+    function renderApps(data) {
+      const container = document.getElementById('appsContainer');
+      container.innerHTML = '';
+
+      data.apps.forEach(app => {
+        const primaryPkg = app.packages.find(p => p.primary) || app.packages[0];
+        
+        const card = document.createElement('article');
+        card.className = 'app-card';
+
+        // Buttons HTML
+        const btnsHtml = app.packages.map(p => `
+          <a href="${p.url}" class="btn ${p.primary ? 'btn-primary' : 'btn-secondary'}">
+            <span>⬇️</span>
+            <span>${p.label} (${p.size})</span>
+          </a>
+        `).join('');
+
+        // Changelog HTML
+        const changelogHtml = app.changelog.map(item => `<li>${item}</li>`).join('');
+
+        card.innerHTML = `
+          <div class="app-head">
+            <img class="app-icon" src="${app.icon}" alt="${app.nameKo} icon" onerror="this.style.background='#3b82f6'">
+            <div class="app-titles">
+              <div class="app-title-row">
+                <span class="app-name">${app.nameKo}</span>
+                <span class="tag green">v${app.version}</span>
+                <span class="tag">Build ${app.versionCode}</span>
+                <span class="tag">오프라인 지원</span>
+              </div>
+              <div class="app-summary">${app.summary}</div>
+            </div>
+          </div>
+
+          <div class="meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">지원 환경</span>
+              <span class="meta-val">${app.targetOs}</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">파일 크기</span>
+              <span class="meta-val">${primaryPkg.size} (릴리즈)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">최종 갱신일</span>
+              <span class="meta-val">${app.updated}</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">서명 검증</span>
+              <span class="meta-val">정식 서명 완료 (Release)</span>
+            </div>
+          </div>
+
+          <div class="action-row">
+            <div class="btn-group">
+              ${btnsHtml}
+            </div>
+            <div class="qr-container">
+              <div class="qr-canvas" id="qr-${app.id}"></div>
+              <div class="qr-label">📱 카메라 스캔 시<br>즉시 다운로드</div>
+            </div>
+          </div>
+
+          <details>
+            <summary>
+              <span>📋 주요 기능 및 최신 변경 내역</span>
+              <span>▼</span>
+            </summary>
+            <ul class="changelog-list">
+              ${changelogHtml}
+            </ul>
+          </details>
+        `;
+
+        container.appendChild(card);
+
+        // Render QR Code using qrcode.js
+        if (typeof QRCode !== 'undefined') {
+          setTimeout(() => {
+            const qrTarget = document.getElementById(`qr-${app.id}`);
+            if (qrTarget && primaryPkg.url) {
+              qrTarget.innerHTML = '';
+              new QRCode(qrTarget, {
+                text: primaryPkg.url,
+                width: 110,
+                height: 110,
+                colorDark: "#0f172a",
+                colorLight: "#ffffff",
+                correctLevel: QRCode.CorrectLevel.M
+              });
+            }
+          }, 0);
+        }
+      });
+    }
+
+    // Initialize
+    fetch('apps.json')
+      .then(res => res.json())
+      .then(data => renderApps(data))
+      .catch(err => {
+        console.warn('Using fallback data:', err);
+        renderApps(fallbackData);
+      });
+  </script>
+</body>
+</html>
