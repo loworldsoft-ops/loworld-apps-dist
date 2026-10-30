@@ -1,44 +1,44 @@
 {
-  "updatedAt": "2026-10-30T10:18:00+09:00",
+  "updatedAt": "2026-10-30T15:45:00+09:00",
   "apps": [
     {
       "id": "story-reader",
       "nameKo": "스토리리더",
       "nameEn": "Story Reader",
-      "version": "0.3.1",
-      "versionCode": 4,
+      "version": "0.4.0",
+      "versionCode": 5,
       "icon": "assets/icons/story-reader.png",
-      "summary": "독자의 선택과 상태값에 따라 문장이 다르게 엮이는 인터랙티브 무협 서사 리더",
+      "summary": "독자의 선택과 상태값에 따라 문장이 다르게 엮이는 인터랙티브 다장르 서사 리더",
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
-      "updated": "2026-10-28",
+      "updated": "2026-10-30",
       "packages": [
         {
           "type": "release",
           "label": "정식 릴리즈 APK (권장)",
-          "filename": "StoryReader_0.3.1_release.apk",
-          "size": "33.1 MB",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.3.1_release.apk",
+          "filename": "StoryReader_0.4.0_release.apk",
+          "size": "154.1 MB",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.4.0_release.apk",
           "primary": true
         },
         {
           "type": "debug",
           "label": "개발 디버그 APK",
-          "filename": "StoryReader_0.3.1_debug.apk",
-          "size": "34.6 MB",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.3.1_debug.apk",
+          "filename": "StoryReader_0.4.0_debug.apk",
+          "size": "155.6 MB",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.4.0_debug.apk",
           "primary": false
         }
       ],
       "changelog": [
+        "v0.4.0: [장르 확장] 신규 소설 2종 탑재 — 수학 모험 소설 「스토리매스: 수의 비밀」, 청춘 캠퍼스 로맨스 「다시 쓰는 첫사랑」",
+        "v0.4.0: [책장 개편] 무협(청운잡역기)·수학(스토리매스)·로맨스(다시 쓰는 첫사랑) 3대 장르 트로이카 완성",
+        "v0.4.0: [음성 혁신] Sherpa-ONNX 온디바이스 신경망 AI 음성 엔진 연동 (오프라인 고품질 성우 보이스 낭독)",
         "W12: 서막 주력 초식 및 설전 수(허점 찌르기·뜻 떠보기 등) 직접 지정",
         "W12: 완독 후 정산 카드에서 결정타 무공 뱃지 및 합별 공방 요약(Clash Logs) 제공",
         "W12: 인물 성품 카드 3슬롯 시각화 및 동료 유대(Bond) 게이지 연동",
-        "W12: 무공 경지 돌파 진척도 및 누적 내공(갑자/년) 운기 카드 배치",
-        "W12: 여정 탭 사건 줄기(Arcs) 퀘스트북 진행률(%) 목록 제공",
         "W11: 책장 최상단 원터치 '이어 읽기' 및 마지막 읽던 문단 자동 스크롤 복원",
-        "W11: 오디오북 TTS 낭독(금빛 문단 하이라이트 + 자동 스크롤 + 3단계 배속)",
-        "W11: 글자 크기, 줄 간격, 양피지/어둡게/밝게 독서 맞춤 설정 및 로컬 영구 보관"
+        "W11: 오디오북 TTS 낭독(금빛 문단 하이라이트 + 자동 스크롤 + 3단계 배속)"
       ]
     },
     {
