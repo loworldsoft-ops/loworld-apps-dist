@@ -1,14 +1,102 @@
 {
-  "updatedAt": "2026-10-30T15:45:00+09:00",
+  "updatedAt": "2026-10-30T17:30:00+09:00",
   "apps": [
     {
+      "id": "novel-wuxia",
+      "nameKo": "화산의 검향",
+      "nameEn": "Plum Blossom Sword (Interactive Wuxia)",
+      "version": "0.4.0",
+      "versionCode": 5,
+      "icon": "assets/icons/novel-wuxia.png",
+      "summary": "【유료 단독 소설 • 인앱결제 없음】 독자의 선택과 무공 경지(초식·설전)에 따라 본문이 다르게 엮이는 정통 무협 서사 (완결 소장판)",
+      "targetOs": "Android 8.0+ (API 26+)",
+      "offline": true,
+      "badge": "유료 소설 (추가결제 없음)",
+      "updated": "2026-10-30",
+      "packages": [
+        {
+          "type": "release",
+          "label": "정식 릴리즈 APK (단독 소설 앱)",
+          "filename": "Novel_Wuxia_0.4.0_release.apk",
+          "size": "232.1 MB",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Wuxia_0.4.0_release.apk",
+          "primary": true
+        }
+      ],
+      "changelog": [
+        "v0.4.0: [단독 앱 출시] 책장을 거치지 않고 바로 시작하는 단독 소설 앱 모드 탑재",
+        "v0.4.0: [인앱결제 제로] 광고와 추가 과금 없는 완전한 오프라인 완결 소장판",
+        "v0.4.0: [AI 성우 낭독] Sherpa-ONNX 온디바이스 신경망 오프라인 음성 낭독 (금빛 문단 하이라이트 + 자동 스크롤)",
+        "v0.4.0: [브랜딩] 수묵화 매화검 전용 맞춤 런처 아이콘 세트 적용",
+        "W12: 12칸 인형 장비, 영약 흡수, 연금 조합, 무력 합·언변 수 겨루기 연동"
+      ]
+    },
+    {
+      "id": "novel-math",
+      "nameKo": "스토리매스: 수의 비밀과 모험",
+      "nameEn": "StoryMath: Secret of Numbers (Adventure Novel)",
+      "version": "0.4.0",
+      "versionCode": 5,
+      "icon": "assets/icons/novel-math.png",
+      "summary": "【유료 단독 소설 • 인앱결제 없음】 수학적 논리와 퍼즐로 고대 유적의 함정을 돌파하는 흥미진진한 에듀테인먼트 인터랙티브 게임북",
+      "targetOs": "Android 8.0+ (API 26+)",
+      "offline": true,
+      "badge": "유료 소설 (추가결제 없음)",
+      "updated": "2026-10-30",
+      "packages": [
+        {
+          "type": "release",
+          "label": "정식 릴리즈 APK (단독 소설 앱)",
+          "filename": "Novel_Math_0.4.0_release.apk",
+          "size": "232.1 MB",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Math_0.4.0_release.apk",
+          "primary": true
+        }
+      ],
+      "changelog": [
+        "v0.4.0: [단독 앱 출시] 수학 탐험 소설 단독 실행 모드 탑재",
+        "v0.4.0: [인앱결제 제로] 추가 과금 없이 오프라인에서 끝까지 즐기는 인터랙티브 에듀 소설",
+        "v0.4.0: [AI 성우 낭독] Sherpa-ONNX 온디바이스 음성 낭독 브리지 지원",
+        "v0.4.0: [브랜딩] 고대 황금 나침반과 기하학 룬 맞춤 런처 아이콘 적용"
+      ]
+    },
+    {
+      "id": "novel-romance",
+      "nameKo": "다시 쓰는 첫사랑",
+      "nameEn": "Rewriting First Love (Visual Novel)",
+      "version": "0.4.0",
+      "versionCode": 5,
+      "icon": "assets/icons/novel-romance.png",
+      "summary": "【유료 단독 소설 • 인앱결제 없음】 흩날리는 벚꽃 아래에서 펼쳐지는 설레는 캠퍼스 청춘 로맨스 인터랙티브 비주얼 노벨 (완결 소장판)",
+      "targetOs": "Android 8.0+ (API 26+)",
+      "offline": true,
+      "badge": "유료 소설 (추가결제 없음)",
+      "updated": "2026-10-30",
+      "packages": [
+        {
+          "type": "release",
+          "label": "정식 릴리즈 APK (단독 소설 앱)",
+          "filename": "Novel_Romance_0.4.0_release.apk",
+          "size": "231.8 MB",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Romance_0.4.0_release.apk",
+          "primary": true
+        }
+      ],
+      "changelog": [
+        "v0.4.0: [단독 앱 출시] 첫사랑 캠퍼스 로맨스 단독 실행 모드 탑재",
+        "v0.4.0: [인앱결제 제로] 엔딩까지 광고/과금 없는 완전한 오프라인 비주얼 노벨 소장판",
+        "v0.4.0: [AI 성우 낭독] 실시간 문장 추적 및 고음질 온디바이스 음성 낭독",
+        "v0.4.0: [브랜딩] 파스텔 벚꽃 다이어리 맞춤 런처 아이콘 적용"
+      ]
+    },
+    {
       "id": "story-reader",
-      "nameKo": "스토리리더",
-      "nameEn": "Story Reader",
+      "nameKo": "스토리리더 (통합 도서관)",
+      "nameEn": "Story Reader (Library)",
       "version": "0.4.0",
       "versionCode": 5,
       "icon": "assets/icons/story-reader.png",
-      "summary": "독자의 선택과 상태값에 따라 문장이 다르게 엮이는 인터랙티브 다장르 서사 리더",
+      "summary": "무협·수학·로맨스 소설을 한곳에 모아 읽는 종합 인터랙티브 서사 리더 라이브러리",
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
       "updated": "2026-10-30",
@@ -32,18 +120,13 @@
       ],
       "changelog": [
         "v0.4.0: [장르 확장] 신규 소설 2종 탑재 — 수학 모험 소설 「스토리매스: 수의 비밀」, 청춘 캠퍼스 로맨스 「다시 쓰는 첫사랑」",
-        "v0.4.0: [책장 개편] 무협(청운잡역기)·수학(스토리매스)·로맨스(다시 쓰는 첫사랑) 3대 장르 트로이카 완성",
-        "v0.4.0: [음성 혁신] Sherpa-ONNX 온디바이스 신경망 AI 음성 엔진 연동 (오프라인 고품질 성우 보이스 낭독)",
-        "W12: 서막 주력 초식 및 설전 수(허점 찌르기·뜻 떠보기 등) 직접 지정",
-        "W12: 완독 후 정산 카드에서 결정타 무공 뱃지 및 합별 공방 요약(Clash Logs) 제공",
-        "W12: 인물 성품 카드 3슬롯 시각화 및 동료 유대(Bond) 게이지 연동",
-        "W11: 책장 최상단 원터치 '이어 읽기' 및 마지막 읽던 문단 자동 스크롤 복원",
-        "W11: 오디오북 TTS 낭독(금빛 문단 하이라이트 + 자동 스크롤 + 3단계 배속)"
+        "v0.4.0: [책장 개편] 무협·수학·로맨스 3대 장르 트로이카 완성",
+        "v0.4.0: [음성 혁신] Sherpa-ONNX 온디바이스 신경망 AI 음성 엔진 연동"
       ]
     },
     {
       "id": "story-math",
-      "nameKo": "스토리매스",
+      "nameKo": "스토리매스 (초등 수학 학습)",
       "nameEn": "Story Math",
       "version": "1.2.0",
       "versionCode": 8,
@@ -73,9 +156,7 @@
       "changelog": [
         "1.2.0: 설정 옵션(글자 크기, 낭독 속도, 볼륨 조절) 고도화",
         "1.1.1: 스마트폰 세로 및 가로 화면 자동 적응형 레이아웃 완성",
-        "1.1.0: 12막 146단원 초등 전수 수학 커리큘럼 연동",
-        "온디바이스 네이티브 TTS 음성 낭독 및 상황별 효과음",
-        "브랜딩: 신규 고해상도 공식 512px 앱 아이콘 적용"
+        "1.1.0: 12막 146단원 초등 전수 수학 커리큘럼 연동"
       ]
     }
   ]
