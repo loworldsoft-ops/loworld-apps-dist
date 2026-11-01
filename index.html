@@ -18,6 +18,7 @@
       --primary-glow: rgba(59, 130, 246, 0.25);
       --accent: #10b981;
       --amber: #f59e0b;
+      --purple: #a855f7;
       --font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
@@ -59,11 +60,11 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 4px 12px;
+      padding: 4px 14px;
       border-radius: 9999px;
       background: rgba(59, 130, 246, 0.12);
       border: 1px solid rgba(59, 130, 246, 0.3);
-      font-size: 0.8rem;
+      font-size: 0.82rem;
       font-weight: 600;
       color: #60a5fa;
       letter-spacing: 0.5px;
@@ -82,31 +83,42 @@
     .subtitle {
       color: var(--text-muted);
       font-size: 0.98rem;
-      max-width: 540px;
-      line-height: 1.5;
+      max-width: 580px;
+      line-height: 1.55;
     }
 
     /* Notice Banner */
     .banner {
       background: rgba(30, 41, 59, 0.7);
       border: 1px solid rgba(59, 130, 246, 0.25);
-      border-radius: 12px;
-      padding: 14px 18px;
+      border-radius: 14px;
+      padding: 16px 20px;
       display: flex;
-      align-items: center;
-      gap: 12px;
+      flex-direction: column;
+      gap: 8px;
       font-size: 0.9rem;
-      line-height: 1.45;
+      line-height: 1.5;
       color: #cbd5e1;
       backdrop-filter: blur(8px);
     }
-    .banner-icon { font-size: 1.3rem; flex-shrink: 0; }
+    .banner-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      color: #93c5fd;
+      font-size: 0.96rem;
+    }
+    .banner-content {
+      color: #cbd5e1;
+      font-size: 0.88rem;
+    }
 
     /* App Cards Grid */
     .cards-list {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 28px;
     }
 
     .app-card {
@@ -146,7 +158,7 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 6px;
     }
 
     .app-title-row {
@@ -176,28 +188,38 @@
       color: #6ee7b7;
       border-color: rgba(16, 185, 129, 0.3);
     }
+    .tag.purple {
+      background: rgba(168, 85, 247, 0.15);
+      color: #d8b4fe;
+      border-color: rgba(168, 85, 247, 0.3);
+    }
+    .tag.amber {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fcd34d;
+      border-color: rgba(245, 158, 11, 0.3);
+    }
 
     .app-summary {
       color: var(--text-muted);
       font-size: 0.92rem;
-      line-height: 1.4;
-      margin-top: 2px;
+      line-height: 1.45;
     }
 
     /* Meta Info Grid */
     .meta-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       gap: 10px;
-      padding: 12px 14px;
+      padding: 14px 16px;
       background: rgba(15, 23, 42, 0.6);
       border-radius: 12px;
       font-size: 0.82rem;
       border: 1px solid rgba(255, 255, 255, 0.04);
     }
-    .meta-item { display: flex; flex-direction: column; gap: 2px; }
+    .meta-item { display: flex; flex-direction: column; gap: 3px; }
     .meta-label { color: #64748b; font-weight: 500; }
     .meta-val { color: #e2e8f0; font-weight: 600; }
+    .meta-val.highlight { color: #a78bfa; }
 
     /* Action Section (Buttons + QR) */
     .action-row {
@@ -274,32 +296,54 @@
       line-height: 1.2;
     }
 
-    /* Changelog Accordion */
-    details {
-      background: rgba(15, 23, 42, 0.45);
-      border-radius: 10px;
-      padding: 10px 14px;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      font-size: 0.86rem;
+    /* ✨ 최근 적용된 기능 섹션 (상시 노출) */
+    .features-panel {
+      background: rgba(15, 23, 42, 0.55);
+      border-radius: 14px;
+      padding: 16px 18px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
-    summary {
-      font-weight: 600;
-      color: #94a3b8;
-      cursor: pointer;
-      user-select: none;
+    .features-head {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      gap: 8px;
     }
-    summary:hover { color: #cbd5e1; }
-    .changelog-list {
-      margin-top: 10px;
-      padding-left: 20px;
+    .features-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .features-badge {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.12);
+      padding: 2px 8px;
+      border-radius: 9999px;
+    }
+    .features-list {
+      list-style: none;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 8px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 0.88rem;
       color: #cbd5e1;
-      line-height: 1.45;
+      line-height: 1.5;
+    }
+    .feature-item strong {
+      color: #ffffff;
     }
 
     /* Guide Section */
@@ -362,7 +406,7 @@
     @media (max-width: 640px) {
       .app-head { flex-direction: column; align-items: flex-start; }
       .action-row { flex-direction: column-reverse; align-items: center; }
-      .qr-container { display: none; } /* On phone, hide QR by default since user is already on phone */
+      .qr-container { display: none; }
       .btn-group { width: 100%; }
       h1 { font-size: 1.7rem; }
     }
@@ -381,13 +425,15 @@
 
     <!-- Notice Banner -->
     <div class="banner">
-      <div class="banner-icon">📱</div>
-      <div>
-        <strong>모바일 접속 팁:</strong> 스마트폰에서 접속하셨다면 원하는 앱의 <b>[APK 다운로드]</b> 버튼을 누르면 기기에 바로 설치 파일이 다운로드됩니다. PC에서는 화면의 <b>QR 코드</b>를 폰 카메라로 스캔하세요.
+      <div class="banner-head">
+        <span>🎙️ 오픈소스 AI 신경망 음성(Sherpa-ONNX) 및 음성인식(STT) 안내</span>
+      </div>
+      <div class="banner-content">
+        소설 앱(화산의 검향, 스토리매스 소설, 첫사랑) 및 스토리리더에는 인터넷 연결 없이도 고음질 AI 오디오북 낭독을 제공하는 <b>오픈소스 신경망 음성 합성 모델(Sherpa-ONNX 한국어 VITS Mimic3 가중치)</b>이 탑재되어 있습니다. 또한 스토리매스 학습 앱에는 말로 수학 문제를 맞추는 <b>온디바이스 음성인식(STT) 상호작용</b>이 지원됩니다.
       </div>
     </div>
 
-    <!-- App Cards -->
+    <!-- App Cards Container -->
     <main class="cards-list" id="appsContainer">
       <!-- Dynamic render via JS -->
     </main>
@@ -425,78 +471,173 @@
   </div>
 
   <script>
-    // Inlined data as fallback, also fetches apps.json if available
+    // Fallback data for offline / direct browser viewing
     const fallbackData = {
+      "updatedAt": "2026-11-01T09:30:00+09:00",
       "apps": [
         {
-          "id": "story-reader",
-          "nameKo": "스토리리더",
-          "nameEn": "Story Reader",
-          "version": "0.3.1",
-          "versionCode": 4,
-          "icon": "assets/icons/story-reader.png",
-          "summary": "독자의 선택과 상태값에 따라 문장이 다르게 엮이는 인터랙티브 무협 서사 리더 (오프라인 지원)",
+          "id": "novel-wuxia",
+          "nameKo": "화산의 검향",
+          "nameEn": "Plum Blossom Sword (Interactive Wuxia)",
+          "version": "0.4.1",
+          "versionCode": 6,
+          "icon": "assets/icons/novel-wuxia.png",
+          "summary": "【유료 단독 소설 • 인앱결제 없음】 독자의 선택과 무공 경지(초식·설전)에 따라 본문이 다르게 엮이는 정통 무협 서사 (완결 소장판)",
           "targetOs": "Android 8.0+ (API 26+)",
-          "updated": "2026-10-28",
+          "offline": true,
+          "speechEngine": "Sherpa-ONNX 온디바이스 신경망 AI (한국어 VITS)",
+          "badge": "유료 소설 (추가결제 없음)",
+          "updated": "2026-11-01",
           "packages": [
             {
               "type": "release",
-              "label": "정식 릴리즈 APK 다운로드",
-              "size": "33.1 MB",
-              "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.3.1_release.apk",
+              "label": "정식 릴리즈 APK (단독 소설 완결판)",
+              "filename": "Novel_Wuxia_0.4.0_release.apk",
+              "size": "232.1 MB",
+              "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Wuxia_0.4.0_release.apk",
+              "primary": true
+            }
+          ],
+          "features": [
+            "🎙️ [오픈소스 AI 음성] Sherpa-ONNX 오프라인 신경망 TTS 엔진 탑재 (시스템 TTS 폴백 없이 100% 온디바이스 AI 음성 낭독)",
+            "📁 [iOS 폴더 인터랙션] OS 홈 화면 2×2 글래스모피즘 스퀘어클 소설 서재 폴더 타일 & 중앙 스프링 확대 팝업 지원",
+            "✨ [문단 실시간 하이라이트] 오디오북 낭독 시 현재 읽는 문단 금빛 하이라이트 및 자동 부드러운 스크롤",
+            "🛡️ [100% 오프라인 완결 소장판] 추가 결제나 광고, 외부 서버 통신 없는 완전한 독립 오프라인 구동",
+            "⚔️ [무공 & 설전 시스템] 12칸 인형 장비, 영약 흡수, 연금 조합, 무력 합·언변 수 겨루기 인터랙티브 연동"
+          ]
+        },
+        {
+          "id": "novel-math",
+          "nameKo": "스토리매스: 수의 비밀과 모험",
+          "nameEn": "StoryMath: Secret of Numbers (Adventure Novel)",
+          "version": "0.4.1",
+          "versionCode": 6,
+          "icon": "assets/icons/novel-math.png",
+          "summary": "【유료 단독 소설 • 인앱결제 없음】 수학적 논리와 퍼즐로 고대 유적의 함정을 돌파하는 흥미진진한 에듀테인먼트 인터랙티브 게임북",
+          "targetOs": "Android 8.0+ (API 26+)",
+          "offline": true,
+          "speechEngine": "Sherpa-ONNX 온디바이스 신경망 AI 음성",
+          "badge": "유료 소설 (추가결제 없음)",
+          "updated": "2026-11-01",
+          "packages": [
+            {
+              "type": "release",
+              "label": "정식 릴리즈 APK (단독 소설 완결판)",
+              "filename": "Novel_Math_0.4.0_release.apk",
+              "size": "232.1 MB",
+              "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Math_0.4.0_release.apk",
+              "primary": true
+            }
+          ],
+          "features": [
+            "🎙️ [오픈소스 AI 음성] Sherpa-ONNX 온디바이스 음성 엔진으로 수학 모험 스토리 및 대사 오프라인 실시간 낭독",
+            "📁 [iOS 폴더 인터랙션] OS 바탕화면 소설 서재 폴더에서 원터치 다이렉트 런칭",
+            "🧩 [인터랙티브 퍼즐] 초등 1~6학년 수학 교과 논리와 퍼즐로 고대 유적 함정을 돌파하는 에듀 소설",
+            "🛡️ [인앱결제 제로] 광고와 추가 과금 없는 완전한 오프라인 완결 소장판"
+          ]
+        },
+        {
+          "id": "novel-romance",
+          "nameKo": "다시 쓰는 첫사랑",
+          "nameEn": "Rewriting First Love (Visual Novel)",
+          "version": "0.4.1",
+          "versionCode": 6,
+          "icon": "assets/icons/novel-romance.png",
+          "summary": "【유료 단독 소설 • 인앱결제 없음】 흩날리는 벚꽃 아래에서 펼쳐지는 설레는 캠퍼스 청춘 로맨스 인터랙티브 비주얼 노벨 (완결 소장판)",
+          "targetOs": "Android 8.0+ (API 26+)",
+          "offline": true,
+          "speechEngine": "Sherpa-ONNX 온디바이스 신경망 AI 음성",
+          "badge": "유료 소설 (추가결제 없음)",
+          "updated": "2026-11-01",
+          "packages": [
+            {
+              "type": "release",
+              "label": "정식 릴리즈 APK (단독 소설 완결판)",
+              "filename": "Novel_Romance_0.4.0_release.apk",
+              "size": "231.8 MB",
+              "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Romance_0.4.0_release.apk",
+              "primary": true
+            }
+          ],
+          "features": [
+            "🎙️ [오픈소스 AI 음성] Sherpa-ONNX 신경망 음성으로 설레는 캠퍼스 대화 실시간 낭독 및 문단 추적",
+            "📁 [iOS 폴더 인터랙션] OS 바탕화면 소설 서재 폴더에서 원터치 실행 연동",
+            "🌸 [비주얼 노벨 소장판] 벚꽃 일러스트, 감성 BGM, 선택지 분기형 멀티 엔딩 완전 오프라인 수록",
+            "🛡️ [인앱결제 제로] 엔딩까지 광고/과금 없는 완전한 오프라인 비주얼 노벨 완결판"
+          ]
+        },
+        {
+          "id": "story-reader",
+          "nameKo": "스토리리더 (통합 도서관)",
+          "nameEn": "Story Reader (Library)",
+          "version": "0.4.1",
+          "versionCode": 6,
+          "icon": "assets/icons/story-reader.png",
+          "summary": "무협·수학·로맨스 소설을 한곳에 모아 읽는 종합 인터랙티브 서사 리더 라이브러리",
+          "targetOs": "Android 8.0+ (API 26+)",
+          "offline": true,
+          "speechEngine": "Sherpa-ONNX 신경망 AI + 시스템 TTS",
+          "updated": "2026-11-01",
+          "packages": [
+            {
+              "type": "release",
+              "label": "정식 릴리즈 APK (권장)",
+              "filename": "StoryReader_0.4.0_release.apk",
+              "size": "154.1 MB",
+              "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.4.0_release.apk",
               "primary": true
             },
             {
               "type": "debug",
-              "label": "개발 디버그 APK 다운로드",
-              "size": "34.6 MB",
-              "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.3.1_debug.apk",
+              "label": "개발 디버그 APK",
+              "filename": "StoryReader_0.4.0_debug.apk",
+              "size": "155.6 MB",
+              "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.4.0_debug.apk",
               "primary": false
             }
           ],
-          "changelog": [
-            "W12: 서막 주력 초식 및 설전 수(허점 찌르기·뜻 떠보기 등) 직접 지정",
-            "W12: 완독 후 정산 카드에서 결정타 무공 뱃지 및 합별 공방 요약(Clash Logs) 제공",
-            "W12: 인물 성품 카드 3슬롯 시각화 및 동료 유대(Bond) 게이지 연동",
-            "W12: 무공 경지 돌파 진척도 및 누적 내공(갑자/년) 운기 카드 배치",
-            "W12: 여정 탭 사건 줄기(Arcs) 퀘스트북 진행률(%) 목록 제공",
-            "W11: 책장 최상단 원터치 '이어 읽기' 및 마지막 읽던 문단 자동 스크롤 복원",
-            "W11: 오디오북 TTS 낭독(금빛 문단 하이라이트 + 자동 스크롤 + 3단계 배속)",
-            "W11: 글자 크기, 줄 간격, 양피지/어둡게/밝게 독서 맞춤 설정 및 로컬 영구 보관"
+          "features": [
+            "🎙️ [오픈소스 AI 음성] Sherpa-ONNX 온디바이스 신경망 AI 음성 엔진 공식 연동 (오프라인 낭독)",
+            "📁 [iOS 소설 서재 폴더] 데스크톱 및 모바일 OS 홈에서 2×2 글래스모피즘 폴더로 책장 바로가기",
+            "📚 [3대 장르 트로이카] 화산의 검향 1·2권(무협) + 스토리매스(수학) + 다시 쓰는 첫사랑(로맨스) 통합 책장",
+            "📖 [독서 최적화] 글자 크기, 줄 간격, 양피지/다크/라이트 테마, 마지막 읽던 문단 자동 복원"
           ]
         },
         {
           "id": "story-math",
-          "nameKo": "스토리매스",
+          "nameKo": "스토리매스 (초등 수학 학습)",
           "nameEn": "Story Math",
-          "version": "1.2.0",
-          "versionCode": 8,
+          "version": "1.2.1",
+          "versionCode": 9,
           "icon": "assets/icons/story-math.png",
-          "summary": "초등 1~6학년 수학 교과과정을 탐험과 모험으로 풀어가는 인터랙티브 스토리 수학 게임",
+          "summary": "초등 1~6학년 수학 교과과정을 탐험과 모험으로 풀어가는 인터랙티브 스토리 수학",
           "targetOs": "Android 8.0+ (API 26+)",
-          "updated": "2026-10-29",
+          "offline": true,
+          "speechEngine": "온디바이스 음성인식(STT) + 음성합성(TTS)",
+          "updated": "2026-11-01",
           "packages": [
             {
               "type": "release-standard",
-              "label": "표준 릴리즈 APK 다운로드",
+              "label": "표준 릴리즈 APK (용량 최적화 7.6MB)",
+              "filename": "StoryMath_1.2.0_standard_release.apk",
               "size": "7.6 MB",
               "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.2.0_standard_release.apk",
               "primary": true
             },
             {
               "type": "release-pleos",
-              "label": "Pleos 전용 릴리즈 APK 다운로드",
+              "label": "Pleos 전용 릴리즈 APK",
+              "filename": "StoryMath_1.2.0_pleos_release.apk",
               "size": "19.3 MB",
               "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.2.0_pleos_release.apk",
               "primary": false
             }
           ],
-          "changelog": [
-            "1.2.0: 설정 옵션(글자 크기, 낭독 속도, 볼륨 조절) 고도화",
-            "1.1.1: 스마트폰 세로 및 가로 화면 자동 적응형 레이아웃 완성",
-            "1.1.0: 12막 146단원 초등 전수 수학 커리큘럼 연동",
-            "온디바이스 네이티브 TTS 음성 낭독 및 상황별 효과음",
-            "브랜딩: 신규 고해상도 공식 512px 앱 아이콘 적용"
+          "features": [
+            "🗣️ [음성인식(STT) 상호작용] 음성으로 답하면 AI가 알아듣고 반응하는 온디바이스 음성인식(Speech-to-Text) 수학 풀이",
+            "📐 [초등 전수 커리큘럼] 12막 146단원 초등 1~6학년 전과정 모험 스토리 수록",
+            "⚡ [경량 최적화] 7.6MB 초경량 설치 파일로 저사양 기기에서도 즉시 실행",
+            "📱 [반응형 레이아웃] 스마트폰 세로/가로 및 태블릿 자동 적응형 UI"
           ]
         }
       ]
@@ -520,8 +661,13 @@
           </a>
         `).join('');
 
-        // Changelog HTML
-        const changelogHtml = app.changelog.map(item => `<li>${item}</li>`).join('');
+        // Features list HTML (상시 노출)
+        const features = app.features || app.changelog || [];
+        const featuresHtml = features.map(item => `
+          <li class="feature-item">
+            <span>${item}</span>
+          </li>
+        `).join('');
 
         card.innerHTML = `
           <div class="app-head">
@@ -531,7 +677,8 @@
                 <span class="app-name">${app.nameKo}</span>
                 <span class="tag green">v${app.version}</span>
                 <span class="tag">Build ${app.versionCode}</span>
-                <span class="tag">오프라인 지원</span>
+                <span class="tag purple">🎙️ ${app.speechEngine ? app.speechEngine.split(' ')[0] : 'Sherpa-ONNX'}</span>
+                ${app.badge ? `<span class="tag amber">${app.badge}</span>` : ''}
               </div>
               <div class="app-summary">${app.summary}</div>
             </div>
@@ -547,13 +694,26 @@
               <span class="meta-val">${primaryPkg.size} (릴리즈)</span>
             </div>
             <div class="meta-item">
+              <span class="meta-label">음성 엔진</span>
+              <span class="meta-val highlight">${app.speechEngine || 'Sherpa-ONNX AI 음성'}</span>
+            </div>
+            <div class="meta-item">
               <span class="meta-label">최종 갱신일</span>
               <span class="meta-val">${app.updated}</span>
             </div>
-            <div class="meta-item">
-              <span class="meta-label">서명 검증</span>
-              <span class="meta-val">정식 서명 완료 (Release)</span>
+          </div>
+
+          <!-- ✨ 최근 적용된 기능 리스트 (상시 표시) -->
+          <div class="features-panel">
+            <div class="features-head">
+              <div class="features-title">
+                <span>✨ 최근 적용된 최신 기능 (Latest Updates)</span>
+              </div>
+              <span class="features-badge">${app.updated} 갱신</span>
             </div>
+            <ul class="features-list">
+              ${featuresHtml}
+            </ul>
           </div>
 
           <div class="action-row">
@@ -565,16 +725,6 @@
               <div class="qr-label">📱 카메라 스캔 시<br>즉시 다운로드</div>
             </div>
           </div>
-
-          <details>
-            <summary>
-              <span>📋 주요 기능 및 최신 변경 내역</span>
-              <span>▼</span>
-            </summary>
-            <ul class="changelog-list">
-              ${changelogHtml}
-            </ul>
-          </details>
         `;
 
         container.appendChild(card);
@@ -600,7 +750,7 @@
     }
 
     // Initialize
-    fetch('apps.json')
+    fetch('apps.json?t=' + Date.now())
       .then(res => res.json())
       .then(data => renderApps(data))
       .catch(err => {

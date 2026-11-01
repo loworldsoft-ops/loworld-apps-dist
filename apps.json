@@ -1,105 +1,113 @@
 {
-  "updatedAt": "2026-10-30T17:30:00+09:00",
+  "updatedAt": "2026-11-01T09:30:00+09:00",
+  "notice": {
+    "title": "오픈소스 온디바이스 AI 음성 엔진(Sherpa-ONNX) & iOS 스타일 소설 서재 탑재 안내",
+    "description": "모든 소설 앱 및 스토리리더에 오픈소스 신경망 음성 낭독 엔진(Sherpa-ONNX 한국어 VITS 모델)이 적용되어 인터넷 없이 완전 오프라인으로 AI 성우 낭독을 제공합니다. 또한 홈 화면에 iOS 스타일 2x2 스퀘어클 소설 서재 폴더가 연동되어 편리하게 원하는 소설을 바로 즐기실 수 있습니다."
+  },
   "apps": [
     {
       "id": "novel-wuxia",
       "nameKo": "화산의 검향",
       "nameEn": "Plum Blossom Sword (Interactive Wuxia)",
-      "version": "0.4.0",
-      "versionCode": 5,
+      "version": "0.4.1",
+      "versionCode": 6,
       "icon": "assets/icons/novel-wuxia.png",
       "summary": "【유료 단독 소설 • 인앱결제 없음】 독자의 선택과 무공 경지(초식·설전)에 따라 본문이 다르게 엮이는 정통 무협 서사 (완결 소장판)",
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
+      "speechEngine": "Sherpa-ONNX 온디바이스 신경망 AI (한국어 VITS 가중치 탑재)",
       "badge": "유료 소설 (추가결제 없음)",
-      "updated": "2026-10-30",
+      "updated": "2026-11-01",
       "packages": [
         {
           "type": "release",
-          "label": "정식 릴리즈 APK (단독 소설 앱)",
+          "label": "정식 릴리즈 APK (단독 소설 완결판)",
           "filename": "Novel_Wuxia_0.4.0_release.apk",
           "size": "232.1 MB",
           "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Wuxia_0.4.0_release.apk",
           "primary": true
         }
       ],
-      "changelog": [
-        "v0.4.0: [단독 앱 출시] 책장을 거치지 않고 바로 시작하는 단독 소설 앱 모드 탑재",
-        "v0.4.0: [인앱결제 제로] 광고와 추가 과금 없는 완전한 오프라인 완결 소장판",
-        "v0.4.0: [AI 성우 낭독] Sherpa-ONNX 온디바이스 신경망 오프라인 음성 낭독 (금빛 문단 하이라이트 + 자동 스크롤)",
-        "v0.4.0: [브랜딩] 수묵화 매화검 전용 맞춤 런처 아이콘 세트 적용",
-        "W12: 12칸 인형 장비, 영약 흡수, 연금 조합, 무력 합·언변 수 겨루기 연동"
+      "features": [
+        "🎙️ [오픈소스 AI 음성] Sherpa-ONNX 오프라인 신경망 TTS 엔진 탑재 (시스템 TTS 폴백 없이 100% 온디바이스 AI 음성 낭독)",
+        "📁 [iOS 폴더 인터랙션] OS 홈 화면 2×2 글래스모피즘 스퀘어클 소설 서재 폴더 타일 & 중앙 스프링 확대 팝업 지원",
+        "✨ [문단 실시간 하이라이트] 오디오북 낭독 시 현재 읽는 문단 금빛 하이라이트 및 자동 부드러운 스크롤",
+        "🛡️ [100% 오프라인 완결 소장판] 추가 결제나 광고, 외부 서버 통신 없는 완전한 독립 오프라인 구동",
+        "⚔️ [무공 & 설전 시스템] 12칸 인형 장비, 영약 흡수, 연금 조합, 무력 합·언변 수 겨루기 인터랙티브 연동"
       ]
     },
     {
       "id": "novel-math",
       "nameKo": "스토리매스: 수의 비밀과 모험",
       "nameEn": "StoryMath: Secret of Numbers (Adventure Novel)",
-      "version": "0.4.0",
-      "versionCode": 5,
+      "version": "0.4.1",
+      "versionCode": 6,
       "icon": "assets/icons/novel-math.png",
       "summary": "【유료 단독 소설 • 인앱결제 없음】 수학적 논리와 퍼즐로 고대 유적의 함정을 돌파하는 흥미진진한 에듀테인먼트 인터랙티브 게임북",
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
+      "speechEngine": "Sherpa-ONNX 온디바이스 신경망 AI 음성",
       "badge": "유료 소설 (추가결제 없음)",
-      "updated": "2026-10-30",
+      "updated": "2026-11-01",
       "packages": [
         {
           "type": "release",
-          "label": "정식 릴리즈 APK (단독 소설 앱)",
+          "label": "정식 릴리즈 APK (단독 소설 완결판)",
           "filename": "Novel_Math_0.4.0_release.apk",
           "size": "232.1 MB",
           "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Math_0.4.0_release.apk",
           "primary": true
         }
       ],
-      "changelog": [
-        "v0.4.0: [단독 앱 출시] 수학 탐험 소설 단독 실행 모드 탑재",
-        "v0.4.0: [인앱결제 제로] 추가 과금 없이 오프라인에서 끝까지 즐기는 인터랙티브 에듀 소설",
-        "v0.4.0: [AI 성우 낭독] Sherpa-ONNX 온디바이스 음성 낭독 브리지 지원",
-        "v0.4.0: [브랜딩] 고대 황금 나침반과 기하학 룬 맞춤 런처 아이콘 적용"
+      "features": [
+        "🎙️ [오픈소스 AI 음성] Sherpa-ONNX 온디바이스 음성 엔진으로 수학 모험 스토리 및 대사 오프라인 실시간 낭독",
+        "📁 [iOS 폴더 인터랙션] OS 바탕화면 소설 서재 폴더에서 원터치 다이렉트 런칭",
+        "🧩 [인터랙티브 퍼즐] 초등 1~6학년 수학 교과 논리와 퍼즐로 고대 유적 함정을 돌파하는 에듀 소설",
+        "🛡️ [인앱결제 제로] 광고와 추가 과금 없는 완전한 오프라인 완결 소장판"
       ]
     },
     {
       "id": "novel-romance",
       "nameKo": "다시 쓰는 첫사랑",
       "nameEn": "Rewriting First Love (Visual Novel)",
-      "version": "0.4.0",
-      "versionCode": 5,
+      "version": "0.4.1",
+      "versionCode": 6,
       "icon": "assets/icons/novel-romance.png",
       "summary": "【유료 단독 소설 • 인앱결제 없음】 흩날리는 벚꽃 아래에서 펼쳐지는 설레는 캠퍼스 청춘 로맨스 인터랙티브 비주얼 노벨 (완결 소장판)",
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
+      "speechEngine": "Sherpa-ONNX 온디바이스 신경망 AI 음성",
       "badge": "유료 소설 (추가결제 없음)",
-      "updated": "2026-10-30",
+      "updated": "2026-11-01",
       "packages": [
         {
           "type": "release",
-          "label": "정식 릴리즈 APK (단독 소설 앱)",
+          "label": "정식 릴리즈 APK (단독 소설 완결판)",
           "filename": "Novel_Romance_0.4.0_release.apk",
           "size": "231.8 MB",
           "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Romance_0.4.0_release.apk",
           "primary": true
         }
       ],
-      "changelog": [
-        "v0.4.0: [단독 앱 출시] 첫사랑 캠퍼스 로맨스 단독 실행 모드 탑재",
-        "v0.4.0: [인앱결제 제로] 엔딩까지 광고/과금 없는 완전한 오프라인 비주얼 노벨 소장판",
-        "v0.4.0: [AI 성우 낭독] 실시간 문장 추적 및 고음질 온디바이스 음성 낭독",
-        "v0.4.0: [브랜딩] 파스텔 벚꽃 다이어리 맞춤 런처 아이콘 적용"
+      "features": [
+        "🎙️ [오픈소스 AI 음성] Sherpa-ONNX 신경망 음성으로 설레는 캠퍼스 대화 실시간 낭독 및 문단 추적",
+        "📁 [iOS 폴더 인터랙션] OS 바탕화면 소설 서재 폴더에서 원터치 실행 연동",
+        "🌸 [비주얼 노벨 소장판] 벚꽃 일러스트, 감성 BGM, 선택지 분기형 멀티 엔딩 완전 오프라인 수록",
+        "🛡️ [인앱결제 제로] 엔딩까지 광고/과금 없는 완전한 오프라인 비주얼 노벨 완결판"
       ]
     },
     {
       "id": "story-reader",
       "nameKo": "스토리리더 (통합 도서관)",
       "nameEn": "Story Reader (Library)",
-      "version": "0.4.0",
-      "versionCode": 5,
+      "version": "0.4.1",
+      "versionCode": 6,
       "icon": "assets/icons/story-reader.png",
       "summary": "무협·수학·로맨스 소설을 한곳에 모아 읽는 종합 인터랙티브 서사 리더 라이브러리",
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
-      "updated": "2026-10-30",
+      "speechEngine": "Sherpa-ONNX 신경망 AI + 시스템 TTS 하이브리드",
+      "updated": "2026-11-01",
       "packages": [
         {
           "type": "release",
@@ -118,27 +126,29 @@
           "primary": false
         }
       ],
-      "changelog": [
-        "v0.4.0: [장르 확장] 신규 소설 2종 탑재 — 수학 모험 소설 「스토리매스: 수의 비밀」, 청춘 캠퍼스 로맨스 「다시 쓰는 첫사랑」",
-        "v0.4.0: [책장 개편] 무협·수학·로맨스 3대 장르 트로이카 완성",
-        "v0.4.0: [음성 혁신] Sherpa-ONNX 온디바이스 신경망 AI 음성 엔진 연동"
+      "features": [
+        "🎙️ [오픈소스 AI 음성] Sherpa-ONNX 온디바이스 신경망 AI 음성 엔진 공식 연동 (오프라인 낭독)",
+        "📁 [iOS 소설 서재 폴더] 데스크톱 및 모바일 OS 홈에서 2×2 글래스모피즘 폴더로 책장 바로가기",
+        "📚 [3대 장르 트로이카] 화산의 검향 1·2권(무협) + 스토리매스(수학) + 다시 쓰는 첫사랑(로맨스) 통합 책장",
+        "📖 [독서 최적화] 글자 크기, 줄 간격, 양피지/다크/라이트 테마, 마지막 읽던 문단 자동 복원"
       ]
     },
     {
       "id": "story-math",
       "nameKo": "스토리매스 (초등 수학 학습)",
       "nameEn": "Story Math",
-      "version": "1.2.0",
-      "versionCode": 8,
+      "version": "1.2.1",
+      "versionCode": 9,
       "icon": "assets/icons/story-math.png",
       "summary": "초등 1~6학년 수학 교과과정을 탐험과 모험으로 풀어가는 인터랙티브 스토리 수학",
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
-      "updated": "2026-10-29",
+      "speechEngine": "온디바이스 음성인식(STT) + 음성합성(TTS)",
+      "updated": "2026-11-01",
       "packages": [
         {
           "type": "release-standard",
-          "label": "표준 릴리즈 APK (일반 폰/태블릿)",
+          "label": "표준 릴리즈 APK (용량 최적화 7.6MB)",
           "filename": "StoryMath_1.2.0_standard_release.apk",
           "size": "7.6 MB",
           "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.2.0_standard_release.apk",
@@ -153,10 +163,11 @@
           "primary": false
         }
       ],
-      "changelog": [
-        "1.2.0: 설정 옵션(글자 크기, 낭독 속도, 볼륨 조절) 고도화",
-        "1.1.1: 스마트폰 세로 및 가로 화면 자동 적응형 레이아웃 완성",
-        "1.1.0: 12막 146단원 초등 전수 수학 커리큘럼 연동"
+      "features": [
+        "🗣️ [음성인식(STT) 상호작용] 음성으로 답하면 AI가 알아듣고 반응하는 온디바이스 음성인식(Speech-to-Text) 수학 풀이",
+        "📐 [초등 전수 커리큘럼] 12막 146단원 초등 1~6학년 전과정 모험 스토리 수록",
+        "⚡ [경량 최적화] 7.6MB 초경량 설치 파일로 저사양 기기에서도 즉시 실행",
+        "📱 [반응형 레이아웃] 스마트폰 세로/가로 및 태블릿 자동 적응형 UI"
       ]
     }
   ]
