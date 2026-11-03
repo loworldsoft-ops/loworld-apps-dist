@@ -1,16 +1,16 @@
 {
-  "updatedAt": "2026-11-03T07:53:37.855Z",
+  "updatedAt": "2026-11-03T08:07:19.989Z",
   "notice": {
-    "title": "오픈소스 온디바이스 AI 음성 엔진(Sherpa-ONNX) & iOS 스타일 소설 서재 탑재 안내",
-    "description": "모든 소설 앱 및 스토리리더에 오픈소스 신경망 음성 낭독 엔진(Sherpa-ONNX 한국어 VITS 모델)이 적용되어 인터넷 없이 완전 오프라인으로 AI 성우 낭독을 제공합니다. 또한 홈 화면에 iOS 스타일 2x2 스퀘어클 소설 서재 폴더가 연동되어 편리하게 원하는 소설을 바로 즐기실 수 있습니다."
+    "title": "온디바이스 AI 음성 Supertonic 3 탑재 안내",
+    "description": "스토리리더와 소설 앱의 신경망 낭독 음성을 Supertonic 3으로 바꿨습니다. 인터넷 없이 AI 여성 5, AI 남성 5 목소리로 읽으며, ▶ 듣기 옆 음성 이름을 눌러 폰의 목소리와 함께 한 목록에서 고를 수 있습니다. 앱 크기가 약 300MB로 커졌습니다."
   },
   "apps": [
     {
       "id": "novel-cheonma",
       "nameKo": "천마회귀",
       "nameEn": "Heavenly Demon Returns (Interactive Wuxia)",
-      "version": "0.6.1",
-      "versionCode": 18,
+      "version": "0.4.1",
+      "versionCode": 6,
       "icon": "assets/icons/novel-cheonma.png",
       "summary": "【유료 단독 소설 • 인앱결제 없음】 세가의 고수에게 쓰러진 천마가 소년의 몸에서 깨어나 룬과 가면으로 다시 서는 인터랙티브 무협 서사 (완결 소장판)",
       "targetOs": "Android 8.0+ (API 26+)",
@@ -21,41 +21,45 @@
         {
           "type": "release",
           "label": "정식 릴리즈 APK (단독 소설 앱)",
-          "filename": "Novel_Cheonma_0.6.1_release.apk",
+          "filename": "Novel_Cheonma_0.4.1_release.apk",
           "size": "298.3 MB",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Cheonma_0.6.1_release.apk",
-          "primary": true
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Cheonma_0.4.1_release.apk",
+          "primary": true,
+          "version": "0.4.1",
+          "versionCode": 6,
+          "builtAt": "2026-11-03 16:48 (KST)",
+          "deployedAt": "2026-11-03 17:04 (KST)"
         }
       ],
-      "changelog": [
-        "v0.6.1: [단독 앱 출시] 「천마회귀」 단독 실행 모드 탑재 (1~6화 및 막간 1, 곡대 보스전)",
-        "v0.6.1: [무공 시스템] 룬과 무공 파해·성(Rank) 시스템 수록",
-        "v0.6.1: [AI 성우 낭독] Sherpa-ONNX 온디바이스 신경망 오프라인 음성 낭독 (금빛 문단 하이라이트 + 자동 스크롤)",
-        "v0.6.1: [도감 연동] 본문 내 발견 항목 밑줄 및 도감 카드 팝업, 인물 ↔ 무공 양방향 연결"
-      ]
+      "changelog": [],
+      "deployedAt": "2026-11-03 17:04 (KST)",
+      "speechEngine": "Supertonic 3 온디바이스 AI 음성 (여성 5·남성 5) + 안드로이드 TTS"
     },
     {
       "id": "novel-wuxia",
       "nameKo": "화산의 검향",
       "nameEn": "Plum Blossom Sword (Interactive Wuxia)",
-      "version": "0.4.1",
-      "versionCode": 6,
+      "version": "0.4.0",
+      "versionCode": 5,
       "icon": "assets/icons/novel-wuxia.png",
       "summary": "【유료 단독 소설 • 인앱결제 없음】 독자의 선택과 무공 경지(초식·설전)에 따라 본문이 다르게 엮이는 정통 무협 서사 (완결 소장판)",
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
       "speechEngine": "Sherpa-ONNX 온디바이스 신경망 AI (한국어 VITS 가중치 탑재)",
       "badge": "유료 소설 (추가결제 없음)",
-      "updated": "2026-11-01",
+      "updated": "2026-11-03",
       "packages": [
         {
           "type": "release",
           "label": "정식 릴리즈 APK (단독 소설 완결판)",
           "filename": "Novel_Wuxia_0.4.0_release.apk",
-          "size": "197.3 MB",
-          "builtAt": "2026-11-01 10:21 (KST)",
+          "size": "232.1 MB",
+          "builtAt": "2026-10-30 17:27 (KST)",
           "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Wuxia_0.4.0_release.apk",
-          "primary": true
+          "primary": true,
+          "version": "0.4.0",
+          "versionCode": 5,
+          "deployedAt": "2026-11-03 17:04 (KST)"
         }
       ],
       "features": [
@@ -64,7 +68,8 @@
         "✨ [문단 실시간 하이라이트] 오디오북 낭독 시 현재 읽는 문단 금빛 하이라이트 및 자동 부드러운 스크롤",
         "🛡️ [100% 오프라인 완결 소장판] 추가 결제나 광고, 외부 서버 통신 없는 완전한 독립 오프라인 구동",
         "⚔️ [무공 & 설전 시스템] 12칸 인형 장비, 영약 흡수, 연금 조합, 무력 합·언변 수 겨루기 인터랙티브 연동"
-      ]
+      ],
+      "deployedAt": "2026-11-03 17:04 (KST)"
     },
     {
       "id": "novel-math",
@@ -76,18 +81,21 @@
       "summary": "【유료 단독 소설 • 인앱결제 없음】 수학적 논리와 퍼즐로 고대 유적의 함정을 돌파하는 흥미진진한 에듀테인먼트 인터랙티브 게임북",
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
-      "speechEngine": "Sherpa-ONNX 온디바이스 신경망 AI 음성",
+      "speechEngine": "Supertonic 3 온디바이스 AI 음성 (여성 5·남성 5) + 안드로이드 TTS",
       "badge": "유료 소설 (추가결제 없음)",
-      "updated": "2026-11-01",
+      "updated": "2026-11-03",
       "packages": [
         {
           "type": "release",
           "label": "정식 릴리즈 APK (단독 소설 완결판)",
-          "filename": "Novel_Math_0.4.0_release.apk",
-          "size": "197.3 MB",
-          "builtAt": "2026-11-01 10:21 (KST)",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Math_0.4.0_release.apk",
-          "primary": true
+          "filename": "Novel_Math_0.4.1_release.apk",
+          "size": "298.5 MB",
+          "builtAt": "2026-11-03 16:48 (KST)",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Math_0.4.1_release.apk",
+          "primary": true,
+          "version": "0.4.1",
+          "versionCode": 6,
+          "deployedAt": "2026-11-03 17:04 (KST)"
         }
       ],
       "features": [
@@ -95,7 +103,8 @@
         "📁 [iOS 폴더 인터랙션] OS 바탕화면 소설 서재 폴더에서 원터치 다이렉트 런칭",
         "🧩 [인터랙티브 퍼즐] 초등 1~6학년 수학 교과 논리와 퍼즐로 고대 유적 함정을 돌파하는 에듀 소설",
         "🛡️ [인앱결제 제로] 광고와 추가 과금 없는 완전한 오프라인 완결 소장판"
-      ]
+      ],
+      "deployedAt": "2026-11-03 17:04 (KST)"
     },
     {
       "id": "novel-romance",
@@ -107,18 +116,21 @@
       "summary": "【유료 단독 소설 • 인앱결제 없음】 흩날리는 벚꽃 아래에서 펼쳐지는 설레는 캠퍼스 청춘 로맨스 인터랙티브 비주얼 노벨 (완결 소장판)",
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
-      "speechEngine": "Sherpa-ONNX 온디바이스 신경망 AI 음성",
+      "speechEngine": "Supertonic 3 온디바이스 AI 음성 (여성 5·남성 5) + 안드로이드 TTS",
       "badge": "유료 소설 (추가결제 없음)",
-      "updated": "2026-11-01",
+      "updated": "2026-11-03",
       "packages": [
         {
           "type": "release",
           "label": "정식 릴리즈 APK (단독 소설 완결판)",
-          "filename": "Novel_Romance_0.4.0_release.apk",
-          "size": "197.2 MB",
-          "builtAt": "2026-11-01 10:21 (KST)",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Romance_0.4.0_release.apk",
-          "primary": true
+          "filename": "Novel_Romance_0.4.1_release.apk",
+          "size": "298.2 MB",
+          "builtAt": "2026-11-03 16:48 (KST)",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Romance_0.4.1_release.apk",
+          "primary": true,
+          "version": "0.4.1",
+          "versionCode": 6,
+          "deployedAt": "2026-11-03 17:04 (KST)"
         }
       ],
       "features": [
@@ -126,7 +138,8 @@
         "📁 [iOS 폴더 인터랙션] OS 바탕화면 소설 서재 폴더에서 원터치 실행 연동",
         "🌸 [비주얼 노벨 소장판] 벚꽃 일러스트, 감성 BGM, 선택지 분기형 멀티 엔딩 완전 오프라인 수록",
         "🛡️ [인앱결제 제로] 엔딩까지 광고/과금 없는 완전한 오프라인 비주얼 노벨 완결판"
-      ]
+      ],
+      "deployedAt": "2026-11-03 17:04 (KST)"
     },
     {
       "id": "story-reader",
@@ -138,7 +151,7 @@
       "summary": "무협·수학·로맨스 소설을 한곳에 모아 읽는 종합 인터랙티브 서사 리더 라이브러리",
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
-      "speechEngine": "Sherpa-ONNX 신경망 AI + 시스템 TTS 하이브리드",
+      "speechEngine": "Supertonic 3 온디바이스 AI 음성 (여성 5·남성 5) + 안드로이드 TTS",
       "updated": "2026-11-03",
       "packages": [
         {
@@ -146,18 +159,24 @@
           "label": "정식 릴리즈 APK (권장)",
           "filename": "StoryReader_0.6.1_release.apk",
           "size": "298.5 MB",
-          "builtAt": "2026-11-01 10:19 (KST)",
+          "builtAt": "2026-11-03 16:47 (KST)",
           "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.6.1_release.apk",
-          "primary": true
+          "primary": true,
+          "version": "0.6.1",
+          "versionCode": 18,
+          "deployedAt": "2026-11-03 17:04 (KST)"
         },
         {
           "type": "debug",
           "label": "개발 디버그 APK",
-          "filename": "StoryReader_0.6.1_debug.apk",
-          "size": "199.7 MB",
-          "builtAt": "2026-11-01 10:20 (KST)",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.6.1_debug.apk",
-          "primary": false
+          "filename": "StoryReader_0.4.0_debug.apk",
+          "size": "155.6 MB",
+          "builtAt": "2026-10-30 15:49 (KST)",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.4.0_debug.apk",
+          "primary": false,
+          "version": "0.4.0",
+          "versionCode": 5,
+          "deployedAt": "2026-11-03 17:04 (KST)"
         }
       ],
       "features": [
@@ -168,44 +187,49 @@
         "📖 [독서 최적화] 글자 크기, 줄 간격, 양피지/다크/라이트 테마, 마지막 읽던 문단 자동 복원"
       ],
       "changelog": [
-        "v0.6.1: [천마회귀 전격 탑재] 1~6화 및 막간 1, 곡대 보스전, 룬·무공 파해·성(Rank) 시스템 수록",
-        "v0.6.1: [도감 연동] 본문 내 발견 항목 밑줄 및 도감 카드 팝업, 인물 ↔ 무공 양방향 연결",
-        "v0.6.1: [UX 완성도] 다크 테마 가독성 개선, 슬롯 초기화 지원, 서막 승패 은닉 처리",
-        "v0.6.0: [천마회귀 전격 탑재] 1~6화 및 막간 1, 곡대 보스전, 룬·무공 파해·성(Rank) 시스템 수록",
-        "v0.6.0: [도감 연동] 본문 내 발견 항목 밑줄 및 도감 카드 팝업, 인물 ↔ 무공 양방향 연결",
-        "v0.6.0: [UX 완성도] 다크 테마 가독성 개선, 슬롯 초기화 지원, 서막 승패 은닉 처리"
-      ]
+        "v0.6.1: [AI 음성 교체] Supertonic 3 온디바이스 신경망 음성 탑재: AI 여성 1~5, AI 남성 1~5 (인터넷 없이 낭독)",
+        "v0.6.1: [목소리 고르기] ▶ 듣기 옆 음성 이름을 누르면 AI 목소리·폰 목소리(여성 n, 남성 n)를 한 목록에서 고른다",
+        "v0.6.1: [화면 통일] 읽는 화면·연결 카드 시트·도감 카드가 공통 테마(양피지·밝게·밤)를 함께 쓴다",
+        "v0.6.1: [안정성] 낭독 중 앱이 종료되던 문제 수정"
+      ],
+      "deployedAt": "2026-11-03 17:04 (KST)"
     },
     {
       "id": "story-math",
       "nameKo": "스토리매스 (초등 수학 학습)",
       "nameEn": "Story Math",
-      "version": "1.2.1",
-      "versionCode": 9,
+      "version": "1.2.0",
+      "versionCode": 13,
       "icon": "assets/icons/story-math.png",
       "summary": "초등 1~6학년 수학 교과과정을 탐험과 모험으로 풀어가는 인터랙티브 스토리 수학",
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
       "speechEngine": "온디바이스 음성인식(STT) + 음성합성(TTS)",
-      "updated": "2026-11-01",
+      "updated": "2026-11-03",
       "packages": [
         {
           "type": "release-standard",
           "label": "표준 릴리즈 APK (온디바이스 AI 음성 탑재)",
           "filename": "StoryMath_1.2.0_standard_release.apk",
-          "size": "197.0 MB",
-          "builtAt": "2026-11-01 10:21 (KST)",
+          "size": "7.6 MB",
+          "builtAt": "2026-10-29 08:57 (KST)",
           "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.2.0_standard_release.apk",
-          "primary": true
+          "primary": true,
+          "version": "1.2.0",
+          "versionCode": 13,
+          "deployedAt": "2026-11-03 17:04 (KST)"
         },
         {
           "type": "release-pleos",
           "label": "Pleos 전용 릴리즈 APK",
           "filename": "StoryMath_1.2.0_pleos_release.apk",
-          "size": "208.1 MB",
-          "builtAt": "2026-11-01 10:21 (KST)",
+          "size": "18.7 MB",
+          "builtAt": "2026-10-29 08:57 (KST)",
           "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.2.0_pleos_release.apk",
-          "primary": false
+          "primary": false,
+          "version": "1.2.0",
+          "versionCode": 13,
+          "deployedAt": "2026-11-03 17:04 (KST)"
         }
       ],
       "features": [
@@ -213,7 +237,9 @@
         "📐 [초등 전수 커리큘럼] 12막 146단원 초등 1~6학년 전과정 모험 스토리 수록",
         "⚡ [경량 최적화] 7.6MB 초경량 설치 파일로 저사양 기기에서도 즉시 실행",
         "📱 [반응형 레이아웃] 스마트폰 세로/가로 및 태블릿 자동 적응형 UI"
-      ]
+      ],
+      "deployedAt": "2026-11-03 17:04 (KST)"
     }
-  ]
+  ],
+  "deployedAt": "2026-11-03 17:04 (KST)"
 }

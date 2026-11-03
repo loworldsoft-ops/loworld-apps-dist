@@ -453,14 +453,13 @@
       <p class="subtitle">인증이나 로그인 없이 최신 안드로이드 애플리케이션(APK)을 직접 다운로드하고 즉시 테스트할 수 있는 공식 배포 포털입니다.</p>
     </header>
 
-    <!-- Notice Banner -->
+    <!-- Notice Banner: 내용은 apps.json의 notice와 deployedAt에서 온다(배포 스크립트가 고친다) -->
     <div class="banner">
       <div class="banner-head">
-        <span>🎙️ 오픈소스 AI 신경망 음성(Sherpa-ONNX) 및 음성인식(STT) 안내</span>
+        <span id="noticeTitle">🎙️ 배포 안내</span>
       </div>
-      <div class="banner-content">
-        소설 앱(화산의 검향, 스토리매스 소설, 첫사랑) 및 스토리리더에는 인터넷 연결 없이도 고음질 AI 오디오북 낭독을 제공하는 <b>오픈소스 신경망 음성 합성 모델(Sherpa-ONNX 한국어 VITS Mimic3 가중치)</b>이 탑재되어 있습니다. 또한 스토리매스 학습 앱에는 말로 수학 문제를 맞추는 <b>온디바이스 음성인식(STT) 상호작용</b>이 지원됩니다.
-      </div>
+      <div class="banner-content" id="noticeBody"></div>
+      <div class="banner-content" id="deployedAt"></div>
     </div>
 
     <!-- App Cards Container -->
@@ -685,6 +684,14 @@
       const container = document.getElementById('appsContainer');
       container.innerHTML = '';
 
+      if (data.notice) {
+        document.getElementById('noticeTitle').textContent = '🎙️ ' + data.notice.title;
+        document.getElementById('noticeBody').textContent = data.notice.description;
+      }
+      if (data.deployedAt) {
+        document.getElementById('deployedAt').textContent = '🚀 마지막 배포: ' + data.deployedAt;
+      }
+
       data.apps.forEach(app => {
         const primaryPkg = app.packages.find(p => p.primary) || app.packages[0];
         
@@ -697,13 +704,14 @@
             <span class="btn-icon">⬇️</span>
             <div class="btn-content">
               <span class="btn-main-text">${p.label} (${p.size})</span>
-              ${p.builtAt ? `<span class="btn-build-time">🕒 마지막 빌드: ${p.builtAt}</span>` : ''}
+              <span class="btn-build-time">${p.version ? `v${p.version} (Build ${p.versionCode}) · ` : ''}🕒 빌드 ${p.builtAt || '-'}${p.deployedAt ? ` · 🚀 배포 ${p.deployedAt}` : ''}</span>
             </div>
           </a>
         `).join('');
 
         // Features list HTML (상시 노출)
-        const features = app.features || app.changelog || [];
+        // 판마다 적은 바뀐 점(changelog)을 먼저 보인다. 손으로 적은 기능 목록(features)은 오래되기 쉽다.
+        const features = (app.changelog && app.changelog.length ? app.changelog : app.features) || [];
         const featuresHtml = features.map(item => `
           <li class="feature-item">
             <span>${item}</span>
@@ -739,12 +747,16 @@
               <span class="meta-val highlight">${app.speechEngine || 'Sherpa-ONNX AI 음성'}</span>
             </div>
             <div class="meta-item">
+              <span class="meta-label">버전</span>
+              <span class="meta-val">v${app.version} (Build ${app.versionCode})</span>
+            </div>
+            <div class="meta-item">
               <span class="meta-label">마지막 빌드</span>
               <span class="meta-val">${primaryPkg.builtAt || app.updated}</span>
             </div>
             <div class="meta-item">
-              <span class="meta-label">최종 갱신일</span>
-              <span class="meta-val">${app.updated}</span>
+              <span class="meta-label">마지막 배포</span>
+              <span class="meta-val">${app.deployedAt || primaryPkg.deployedAt || app.updated}</span>
             </div>
           </div>
 
@@ -754,7 +766,7 @@
               <div class="features-title">
                 <span>✨ 최근 적용된 최신 기능 (Latest Updates)</span>
               </div>
-              <span class="features-badge">${app.updated} 갱신</span>
+              <span class="features-badge">v${app.version} · ${app.deployedAt || app.updated} 배포</span>
             </div>
             <ul class="features-list">
               ${featuresHtml}
