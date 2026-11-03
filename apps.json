@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T08:07:19.989Z",
+  "updatedAt": "2026-11-03T23:41:56.588Z",
   "notice": {
     "title": "온디바이스 AI 음성 Supertonic 3 탑재 안내",
     "description": "스토리리더와 소설 앱의 신경망 낭독 음성을 Supertonic 3으로 바꿨습니다. 인터넷 없이 AI 여성 5, AI 남성 5 목소리로 읽으며, ▶ 듣기 옆 음성 이름을 눌러 폰의 목소리와 함께 한 목록에서 고를 수 있습니다. 앱 크기가 약 300MB로 커졌습니다."
@@ -16,7 +16,7 @@
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
       "badge": "유료 소설 (추가결제 없음)",
-      "updated": "2026-11-03",
+      "updated": "2026-11-04",
       "packages": [
         {
           "type": "release",
@@ -27,12 +27,12 @@
           "primary": true,
           "version": "0.4.1",
           "versionCode": 6,
-          "builtAt": "2026-11-03 16:48 (KST)",
-          "deployedAt": "2026-11-03 17:04 (KST)"
+          "builtAt": "2026-11-03 18:07 (KST)",
+          "deployedAt": "2026-11-04 08:38 (KST)"
         }
       ],
       "changelog": [],
-      "deployedAt": "2026-11-03 17:04 (KST)",
+      "deployedAt": "2026-11-04 08:38 (KST)",
       "speechEngine": "Supertonic 3 온디바이스 AI 음성 (여성 5·남성 5) + 안드로이드 TTS"
     },
     {
@@ -47,7 +47,7 @@
       "offline": true,
       "speechEngine": "Sherpa-ONNX 온디바이스 신경망 AI (한국어 VITS 가중치 탑재)",
       "badge": "유료 소설 (추가결제 없음)",
-      "updated": "2026-11-03",
+      "updated": "2026-11-04",
       "packages": [
         {
           "type": "release",
@@ -59,7 +59,7 @@
           "primary": true,
           "version": "0.4.0",
           "versionCode": 5,
-          "deployedAt": "2026-11-03 17:04 (KST)"
+          "deployedAt": "2026-11-04 08:38 (KST)"
         }
       ],
       "features": [
@@ -69,7 +69,7 @@
         "🛡️ [100% 오프라인 완결 소장판] 추가 결제나 광고, 외부 서버 통신 없는 완전한 독립 오프라인 구동",
         "⚔️ [무공 & 설전 시스템] 12칸 인형 장비, 영약 흡수, 연금 조합, 무력 합·언변 수 겨루기 인터랙티브 연동"
       ],
-      "deployedAt": "2026-11-03 17:04 (KST)"
+      "deployedAt": "2026-11-04 08:38 (KST)"
     },
     {
       "id": "novel-math",
@@ -83,19 +83,19 @@
       "offline": true,
       "speechEngine": "Supertonic 3 온디바이스 AI 음성 (여성 5·남성 5) + 안드로이드 TTS",
       "badge": "유료 소설 (추가결제 없음)",
-      "updated": "2026-11-03",
+      "updated": "2026-11-04",
       "packages": [
         {
           "type": "release",
           "label": "정식 릴리즈 APK (단독 소설 완결판)",
           "filename": "Novel_Math_0.4.1_release.apk",
           "size": "298.5 MB",
-          "builtAt": "2026-11-03 16:48 (KST)",
+          "builtAt": "2026-11-03 18:07 (KST)",
           "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Math_0.4.1_release.apk",
           "primary": true,
           "version": "0.4.1",
           "versionCode": 6,
-          "deployedAt": "2026-11-03 17:04 (KST)"
+          "deployedAt": "2026-11-04 08:38 (KST)"
         }
       ],
       "features": [
@@ -104,7 +104,7 @@
         "🧩 [인터랙티브 퍼즐] 초등 1~6학년 수학 교과 논리와 퍼즐로 고대 유적 함정을 돌파하는 에듀 소설",
         "🛡️ [인앱결제 제로] 광고와 추가 과금 없는 완전한 오프라인 완결 소장판"
       ],
-      "deployedAt": "2026-11-03 17:04 (KST)"
+      "deployedAt": "2026-11-04 08:38 (KST)"
     },
     {
       "id": "novel-romance",
@@ -118,19 +118,19 @@
       "offline": true,
       "speechEngine": "Supertonic 3 온디바이스 AI 음성 (여성 5·남성 5) + 안드로이드 TTS",
       "badge": "유료 소설 (추가결제 없음)",
-      "updated": "2026-11-03",
+      "updated": "2026-11-04",
       "packages": [
         {
           "type": "release",
           "label": "정식 릴리즈 APK (단독 소설 완결판)",
           "filename": "Novel_Romance_0.4.1_release.apk",
           "size": "298.2 MB",
-          "builtAt": "2026-11-03 16:48 (KST)",
+          "builtAt": "2026-11-03 18:07 (KST)",
           "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Romance_0.4.1_release.apk",
           "primary": true,
           "version": "0.4.1",
           "versionCode": 6,
-          "deployedAt": "2026-11-03 17:04 (KST)"
+          "deployedAt": "2026-11-04 08:38 (KST)"
         }
       ],
       "features": [
@@ -139,32 +139,32 @@
         "🌸 [비주얼 노벨 소장판] 벚꽃 일러스트, 감성 BGM, 선택지 분기형 멀티 엔딩 완전 오프라인 수록",
         "🛡️ [인앱결제 제로] 엔딩까지 광고/과금 없는 완전한 오프라인 비주얼 노벨 완결판"
       ],
-      "deployedAt": "2026-11-03 17:04 (KST)"
+      "deployedAt": "2026-11-04 08:38 (KST)"
     },
     {
       "id": "story-reader",
       "nameKo": "스토리리더 (통합 도서관)",
       "nameEn": "Story Reader (Library)",
-      "version": "0.6.1",
-      "versionCode": 18,
+      "version": "0.6.3",
+      "versionCode": 20,
       "icon": "assets/icons/story-reader.png",
       "summary": "무협·수학·로맨스 소설을 한곳에 모아 읽는 종합 인터랙티브 서사 리더 라이브러리",
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
       "speechEngine": "Supertonic 3 온디바이스 AI 음성 (여성 5·남성 5) + 안드로이드 TTS",
-      "updated": "2026-11-03",
+      "updated": "2026-11-04",
       "packages": [
         {
           "type": "release",
           "label": "정식 릴리즈 APK (권장)",
-          "filename": "StoryReader_0.6.1_release.apk",
+          "filename": "StoryReader_0.6.3_release.apk",
           "size": "298.5 MB",
-          "builtAt": "2026-11-03 16:47 (KST)",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.6.1_release.apk",
+          "builtAt": "2026-11-03 18:06 (KST)",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.6.3_release.apk",
           "primary": true,
-          "version": "0.6.1",
-          "versionCode": 18,
-          "deployedAt": "2026-11-03 17:04 (KST)"
+          "version": "0.6.3",
+          "versionCode": 20,
+          "deployedAt": "2026-11-04 08:38 (KST)"
         },
         {
           "type": "debug",
@@ -176,7 +176,7 @@
           "primary": false,
           "version": "0.4.0",
           "versionCode": 5,
-          "deployedAt": "2026-11-03 17:04 (KST)"
+          "deployedAt": "2026-11-04 08:38 (KST)"
         }
       ],
       "features": [
@@ -192,7 +192,7 @@
         "v0.6.1: [화면 통일] 읽는 화면·연결 카드 시트·도감 카드가 공통 테마(양피지·밝게·밤)를 함께 쓴다",
         "v0.6.1: [안정성] 낭독 중 앱이 종료되던 문제 수정"
       ],
-      "deployedAt": "2026-11-03 17:04 (KST)"
+      "deployedAt": "2026-11-04 08:38 (KST)"
     },
     {
       "id": "story-math",
@@ -205,7 +205,7 @@
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
       "speechEngine": "온디바이스 음성인식(STT) + 음성합성(TTS)",
-      "updated": "2026-11-03",
+      "updated": "2026-11-04",
       "packages": [
         {
           "type": "release-standard",
@@ -217,7 +217,7 @@
           "primary": true,
           "version": "1.2.0",
           "versionCode": 13,
-          "deployedAt": "2026-11-03 17:04 (KST)"
+          "deployedAt": "2026-11-04 08:38 (KST)"
         },
         {
           "type": "release-pleos",
@@ -229,7 +229,7 @@
           "primary": false,
           "version": "1.2.0",
           "versionCode": 13,
-          "deployedAt": "2026-11-03 17:04 (KST)"
+          "deployedAt": "2026-11-04 08:38 (KST)"
         }
       ],
       "features": [
@@ -238,8 +238,8 @@
         "⚡ [경량 최적화] 7.6MB 초경량 설치 파일로 저사양 기기에서도 즉시 실행",
         "📱 [반응형 레이아웃] 스마트폰 세로/가로 및 태블릿 자동 적응형 UI"
       ],
-      "deployedAt": "2026-11-03 17:04 (KST)"
+      "deployedAt": "2026-11-04 08:38 (KST)"
     }
   ],
-  "deployedAt": "2026-11-03 17:04 (KST)"
+  "deployedAt": "2026-11-04 08:38 (KST)"
 }
