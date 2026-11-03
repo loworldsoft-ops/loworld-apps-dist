@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T07:29:41.432Z",
+  "updatedAt": "2026-11-03T07:53:37.855Z",
   "notice": {
     "title": "오픈소스 온디바이스 AI 음성 엔진(Sherpa-ONNX) & iOS 스타일 소설 서재 탑재 안내",
     "description": "모든 소설 앱 및 스토리리더에 오픈소스 신경망 음성 낭독 엔진(Sherpa-ONNX 한국어 VITS 모델)이 적용되어 인터넷 없이 완전 오프라인으로 AI 성우 낭독을 제공합니다. 또한 홈 화면에 iOS 스타일 2x2 스퀘어클 소설 서재 폴더가 연동되어 편리하게 원하는 소설을 바로 즐기실 수 있습니다."
@@ -9,8 +9,8 @@
       "id": "novel-cheonma",
       "nameKo": "천마회귀",
       "nameEn": "Heavenly Demon Returns (Interactive Wuxia)",
-      "version": "0.6.0",
-      "versionCode": 17,
+      "version": "0.6.1",
+      "versionCode": 18,
       "icon": "assets/icons/novel-cheonma.png",
       "summary": "【유료 단독 소설 • 인앱결제 없음】 세가의 고수에게 쓰러진 천마가 소년의 몸에서 깨어나 룬과 가면으로 다시 서는 인터랙티브 무협 서사 (완결 소장판)",
       "targetOs": "Android 8.0+ (API 26+)",
@@ -21,17 +21,17 @@
         {
           "type": "release",
           "label": "정식 릴리즈 APK (단독 소설 앱)",
-          "filename": "Novel_Cheonma_0.6.0_release.apk",
+          "filename": "Novel_Cheonma_0.6.1_release.apk",
           "size": "298.3 MB",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Cheonma_0.6.0_release.apk",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Cheonma_0.6.1_release.apk",
           "primary": true
         }
       ],
       "changelog": [
-        "v0.6.0: [단독 앱 출시] 「천마회귀」 단독 실행 모드 탑재 (1~6화 및 막간 1, 곡대 보스전)",
-        "v0.6.0: [무공 시스템] 룬과 무공 파해·성(Rank) 시스템 수록",
-        "v0.6.0: [AI 성우 낭독] Sherpa-ONNX 온디바이스 신경망 오프라인 음성 낭독 (금빛 문단 하이라이트 + 자동 스크롤)",
-        "v0.6.0: [도감 연동] 본문 내 발견 항목 밑줄 및 도감 카드 팝업, 인물 ↔ 무공 양방향 연결"
+        "v0.6.1: [단독 앱 출시] 「천마회귀」 단독 실행 모드 탑재 (1~6화 및 막간 1, 곡대 보스전)",
+        "v0.6.1: [무공 시스템] 룬과 무공 파해·성(Rank) 시스템 수록",
+        "v0.6.1: [AI 성우 낭독] Sherpa-ONNX 온디바이스 신경망 오프라인 음성 낭독 (금빛 문단 하이라이트 + 자동 스크롤)",
+        "v0.6.1: [도감 연동] 본문 내 발견 항목 밑줄 및 도감 카드 팝업, 인물 ↔ 무공 양방향 연결"
       ]
     },
     {
@@ -132,8 +132,8 @@
       "id": "story-reader",
       "nameKo": "스토리리더 (통합 도서관)",
       "nameEn": "Story Reader (Library)",
-      "version": "0.6.0",
-      "versionCode": 17,
+      "version": "0.6.1",
+      "versionCode": 18,
       "icon": "assets/icons/story-reader.png",
       "summary": "무협·수학·로맨스 소설을 한곳에 모아 읽는 종합 인터랙티브 서사 리더 라이브러리",
       "targetOs": "Android 8.0+ (API 26+)",
@@ -144,19 +144,19 @@
         {
           "type": "release",
           "label": "정식 릴리즈 APK (권장)",
-          "filename": "StoryReader_0.6.0_release.apk",
+          "filename": "StoryReader_0.6.1_release.apk",
           "size": "298.5 MB",
           "builtAt": "2026-11-01 10:19 (KST)",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.6.0_release.apk",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.6.1_release.apk",
           "primary": true
         },
         {
           "type": "debug",
           "label": "개발 디버그 APK",
-          "filename": "StoryReader_0.6.0_debug.apk",
+          "filename": "StoryReader_0.6.1_debug.apk",
           "size": "199.7 MB",
           "builtAt": "2026-11-01 10:20 (KST)",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.6.0_debug.apk",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.6.1_debug.apk",
           "primary": false
         }
       ],
@@ -168,12 +168,12 @@
         "📖 [독서 최적화] 글자 크기, 줄 간격, 양피지/다크/라이트 테마, 마지막 읽던 문단 자동 복원"
       ],
       "changelog": [
+        "v0.6.1: [천마회귀 전격 탑재] 1~6화 및 막간 1, 곡대 보스전, 룬·무공 파해·성(Rank) 시스템 수록",
+        "v0.6.1: [도감 연동] 본문 내 발견 항목 밑줄 및 도감 카드 팝업, 인물 ↔ 무공 양방향 연결",
+        "v0.6.1: [UX 완성도] 다크 테마 가독성 개선, 슬롯 초기화 지원, 서막 승패 은닉 처리",
         "v0.6.0: [천마회귀 전격 탑재] 1~6화 및 막간 1, 곡대 보스전, 룬·무공 파해·성(Rank) 시스템 수록",
         "v0.6.0: [도감 연동] 본문 내 발견 항목 밑줄 및 도감 카드 팝업, 인물 ↔ 무공 양방향 연결",
-        "v0.6.0: [UX 완성도] 다크 테마 가독성 개선, 슬롯 초기화 지원, 서막 승패 은닉 처리",
-        "v0.5.8: [천마회귀 전격 탑재] 1~6화 및 막간 1, 곡대 보스전, 룬·무공 파해·성(Rank) 시스템 수록",
-        "v0.5.8: [도감 연동] 본문 내 발견 항목 밑줄 및 도감 카드 팝업, 인물 ↔ 무공 양방향 연결",
-        "v0.5.8: [UX 완성도] 다크 테마 가독성 개선, 슬롯 초기화 지원, 서막 승패 은닉 처리"
+        "v0.6.0: [UX 완성도] 다크 테마 가독성 개선, 슬롯 초기화 지원, 서막 승패 은닉 처리"
       ]
     },
     {
