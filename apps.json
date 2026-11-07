@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T06:27:13.859Z",
+  "updatedAt": "2026-11-07T12:09:40.157Z",
   "notice": {
     "title": "천마회귀 1막 정본화 및 게임 시스템 전체 업데이트 안내",
     "description": "천마회귀 1막(1~6화 및 막간) 정본화와 전 막 등장인물 22인 초상화가 적용되었습니다. 룬 함(3→1 조합), 단약 중첩 복용, 가면 자동 전환, 성품 장착 및 무공 재분배, 여정 탭 반복 수련(파밍), 다회차(보통/악몽/지옥) 루프가 정식 탑재되었습니다."
@@ -205,48 +205,53 @@
       "id": "story-math",
       "nameKo": "스토리매스 (초등 수학 학습)",
       "nameEn": "Story Math",
-      "version": "1.2.0",
-      "versionCode": 13,
+      "version": "1.3.0",
+      "versionCode": 15,
       "icon": "assets/icons/story-math.png",
       "summary": "초등 1~6학년 수학 교과과정을 탐험과 모험으로 풀어가는 인터랙티브 스토리 수학",
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
-      "speechEngine": "온디바이스 음성인식(STT) + 음성합성(TTS)",
-      "updated": "2026-11-06",
+      "speechEngine": "Supertonic 3 온디바이스 AI 음성 (여성 5·남성 5) + 안드로이드 TTS",
+      "updated": "2026-11-07",
       "packages": [
         {
           "type": "release-standard",
           "label": "표준 릴리즈 APK (온디바이스 AI 음성 탑재)",
-          "filename": "StoryMath_1.2.0_standard_release.apk",
-          "size": "7.6 MB",
-          "builtAt": "2026-10-29 08:57 (KST)",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.2.0_standard_release.apk",
+          "filename": "StoryMath_1.3.0_standard_release.apk",
+          "size": "268.2 MB",
+          "builtAt": "2026-11-07 20:55 (KST)",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.3.0_standard_release.apk",
           "primary": true,
-          "version": "1.2.0",
-          "versionCode": 13,
-          "deployedAt": "2026-11-06 15:23 (KST)"
+          "version": "1.3.0",
+          "versionCode": 15,
+          "deployedAt": "2026-11-07 21:08 (KST)"
         },
         {
           "type": "release-pleos",
           "label": "Pleos 전용 릴리즈 APK",
-          "filename": "StoryMath_1.2.0_pleos_release.apk",
-          "size": "18.7 MB",
-          "builtAt": "2026-10-29 08:57 (KST)",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.2.0_pleos_release.apk",
+          "filename": "StoryMath_1.3.0_pleos_release.apk",
+          "size": "279.4 MB",
+          "builtAt": "2026-11-07 20:55 (KST)",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.3.0_pleos_release.apk",
           "primary": false,
-          "version": "1.2.0",
-          "versionCode": 13,
-          "deployedAt": "2026-11-06 15:23 (KST)"
+          "version": "1.3.0",
+          "versionCode": 15,
+          "deployedAt": "2026-11-07 21:08 (KST)"
         }
       ],
       "features": [
-        "🗣️ [온디바이스 STT 기본 탑재] Android 12+ 기기 내장 신경망 음성인식 1순위 적용 (오프라인 지원 및 말로 풀기)",
-        "📐 [초등 전수 커리큘럼] 12막 146단원 초등 1~6학년 전과정 모험 스토리 수록",
-        "⚡ [경량 최적화] 7.6MB 초경량 설치 파일로 저사양 기기에서도 즉시 실행",
-        "📱 [반응형 레이아웃] 스마트폰 세로/가로 및 태블릿 자동 적응형 UI"
+        "🎙️ [온디바이스 AI 음성 10종 탑재] Supertonic 3 신경망 TTS(AI 여성 1~5, AI 남성 1~5) 및 폰 한국어 목소리·차량 음성 미리 듣기·선택 지원",
+        "🗣️ [온디바이스 STT 선택 지원] Pleos 차량 STT 및 Android 12+ 기기 내장 신경망 음성 인식 우선 연동 및 엔진 직접 선택",
+        "📐 [초1~고3 전 과정 커리큘럼] 12막 146단원 탄생 비화·원리 이야기와 2지선다 음성 퀴즈 수록",
+        "📱 [차량 & 모바일 최적화] 1280×720 가로 디스플레이 및 스마트폰/태블릿 반응형 다크 테마 UI"
       ],
-      "deployedAt": "2026-11-06 15:23 (KST)"
+      "deployedAt": "2026-11-07 21:08 (KST)",
+      "changelog": [
+        "v1.3.0: [AI 음성 탑재] Supertonic 3 온디바이스 신경망 음성 탑재: AI 여성 1~5, AI 남성 1~5 총 10종 (오프라인 낭독)",
+        "v1.3.0: [목소리 & STT 고르기] 홈·이야기·문제 화면 상단 바 및 설정에서 AI 목소리·폰 한국어 목소리·차량 음성 미리 듣기와 온디바이스 신경망 STT 엔진 선택 지원",
+        "v1.3.0: [온디바이스 STT] Pleos 차량 STT 및 Android 12+ 온디바이스 신경망 음성 인식 연동 강화"
+      ]
     }
   ],
-  "deployedAt": "2026-11-06 15:23 (KST)"
+  "deployedAt": "2026-11-07 21:08 (KST)"
 }
