@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T12:46:42.564Z",
+  "updatedAt": "2026-11-07T13:03:18.152Z",
   "notice": {
     "title": "천마회귀 1막 정본화 및 게임 시스템 전체 업데이트 안내",
     "description": "천마회귀 1막(1~6화 및 막간) 정본화와 전 막 등장인물 22인 초상화가 적용되었습니다. 룬 함(3→1 조합), 단약 중첩 복용, 가면 자동 전환, 성품 장착 및 무공 재분배, 여정 탭 반복 수련(파밍), 다회차(보통/악몽/지옥) 루프가 정식 탑재되었습니다."
@@ -169,18 +169,6 @@
           "version": "0.6.4",
           "versionCode": 21,
           "deployedAt": "2026-11-06 15:23 (KST)"
-        },
-        {
-          "type": "debug",
-          "label": "개발 디버그 APK",
-          "filename": "StoryReader_0.4.0_debug.apk",
-          "size": "155.6 MB",
-          "builtAt": "2026-10-30 15:49 (KST)",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.4.0_debug.apk",
-          "primary": false,
-          "version": "0.4.0",
-          "versionCode": 5,
-          "deployedAt": "2026-11-06 15:23 (KST)"
         }
       ],
       "features": [
@@ -215,43 +203,31 @@
       "updated": "2026-11-07",
       "packages": [
         {
-          "type": "release-standard",
-          "label": "표준 릴리즈 APK (온디바이스 AI 음성 탑재)",
-          "filename": "StoryMath_1.3.0_standard_release.apk",
-          "size": "268.2 MB",
-          "builtAt": "2026-11-07 21:42 (KST)",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.3.0_standard_release.apk",
+          "type": "release",
+          "label": "정식 릴리즈 APK (차량 Pleos · 일반 안드로이드 통합)",
           "primary": true,
-          "version": "1.3.0",
-          "versionCode": 15,
-          "deployedAt": "2026-11-07 21:45 (KST)"
-        },
-        {
-          "type": "release-pleos",
-          "label": "Pleos 전용 릴리즈 APK",
-          "filename": "StoryMath_1.3.0_pleos_release.apk",
+          "filename": "StoryMath_1.3.0_release.apk",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.3.0_release.apk",
           "size": "279.4 MB",
-          "builtAt": "2026-11-07 21:42 (KST)",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryMath_1.3.0_pleos_release.apk",
-          "primary": false,
           "version": "1.3.0",
           "versionCode": 15,
-          "deployedAt": "2026-11-07 21:45 (KST)"
+          "builtAt": "2026-11-07 21:42 (KST)",
+          "deployedAt": "2026-11-07 22:02 (KST)"
         }
       ],
       "features": [
-        "🎙️ [온디바이스 AI 음성 10종 탑재] Supertonic 3 신경망 TTS(AI 여성 1~5, AI 남성 1~5) 및 폰 한국어 목소리·차량 음성 미리 듣기·선택 지원",
+        "🎙️ [온디바이스 AI 성우 5종 탑재] Supertonic 3 신경망 TTS(아라·하늘·다인·민준·태오) 및 폰 한국어 성우·차량 음성 미리 듣기·선택 지원",
         "🗣️ [온디바이스 STT 선택 지원] Pleos 차량 STT 및 Android 12+ 기기 내장 신경망 음성 인식 우선 연동 및 엔진 직접 선택",
         "📐 [초1~고3 전 과정 커리큘럼] 12막 146단원 탄생 비화·원리 이야기와 2지선다 음성 퀴즈 수록",
-        "📱 [차량 & 모바일 최적화] 1280×720 가로 디스플레이 및 스마트폰/태블릿 반응형 다크 테마 UI"
+        "📱 [차량 & 모바일 통합] Pleos 차량과 일반 스마트폰·태블릿에서 모두 동작하는 통합 APK 및 반응형 다크 테마 UI"
       ],
-      "deployedAt": "2026-11-07 21:45 (KST)",
+      "deployedAt": "2026-11-07 22:02 (KST)",
       "changelog": [
-        "v1.3.0: [AI 음성 탑재] Supertonic 3 온디바이스 신경망 음성 탑재: AI 여성 1~5, AI 남성 1~5 총 10종 (오프라인 낭독)",
-        "v1.3.0: [목소리 & STT 고르기] 홈·이야기·문제 화면 상단 바 및 설정에서 AI 목소리·폰 한국어 목소리·차량 음성 미리 듣기와 온디바이스 신경망 STT 엔진 선택 지원",
-        "v1.3.0: [온디바이스 STT] Pleos 차량 STT 및 Android 12+ 온디바이스 신경망 음성 인식 연동 강화"
+        "v1.3.0: [AI 성우 탑재] Supertonic 3 온디바이스 한국어 신경망 성우 5종 탑재: 아라·하늘·다인(여성), 민준·태오(남성) (오프라인 고정밀 낭독)",
+        "v1.3.0: [한국어 음성 정제 & 클로바형 성우 이름] 한국어 발음이 부정확한 영어권 화자·특수 보이스 제거 및 폰 한국어 성우(유나·서연·준서·도윤 등) 가상 페르소나 적용",
+        "v1.3.0: [목소리 & STT 고르기] 홈·이야기·문제 화면 상단 바 및 설정에서 성우 미리 듣기와 Pleos 차량 STT·Android 12+ 온디바이스 신경망 STT 엔진 선택 지원"
       ]
     }
   ],
-  "deployedAt": "2026-11-07 21:45 (KST)"
+  "deployedAt": "2026-11-07 22:02 (KST)"
 }
