@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T00:14:44.837Z",
+  "updatedAt": "2026-11-08T08:05:59.518Z",
   "notice": {
     "title": "천마회귀 1막 정본화 및 게임 시스템 전체 업데이트 안내",
     "description": "천마회귀 1막(1~6화 및 막간) 정본화와 전 막 등장인물 22인 초상화가 적용되었습니다. 룬 함(3→1 조합), 단약 중첩 복용, 가면 자동 전환, 성품 장착 및 무공 재분배, 여정 탭 반복 수련(파밍), 다회차(보통/악몽/지옥) 루프가 정식 탑재되었습니다."
@@ -9,8 +9,8 @@
       "id": "novel-cheonma",
       "nameKo": "천마회귀",
       "nameEn": "Heavenly Demon Returns (Interactive Wuxia)",
-      "version": "0.4.1",
-      "versionCode": 6,
+      "version": "0.4.2",
+      "versionCode": 7,
       "icon": "assets/icons/novel-cheonma.png",
       "summary": "【유료 단독 소설 • 인앱결제 없음】 세가의 고수에게 쓰러진 천마가 소년의 몸에서 깨어나 룬과 가면으로 다시 서는 인터랙티브 무협 서사 (완결 소장판)",
       "targetOs": "Android 8.0+ (API 26+)",
@@ -21,22 +21,26 @@
         {
           "type": "release",
           "label": "정식 릴리즈 APK (단독 소설 앱)",
-          "filename": "Novel_Cheonma_0.4.1_release.apk",
-          "size": "306.2 MB",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Cheonma_0.4.1_release.apk",
+          "filename": "Novel_Cheonma_0.4.2_release.apk",
+          "size": "384.7 MB",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Cheonma_0.4.2_release.apk",
           "primary": true,
-          "version": "0.4.1",
-          "versionCode": 6,
-          "builtAt": "2026-11-08 09:13 (KST)",
-          "deployedAt": "2026-11-08 09:14 (KST)"
+          "version": "0.4.2",
+          "versionCode": 7,
+          "builtAt": "2026-11-08 17:04 (KST)",
+          "deployedAt": "2026-11-08 17:05 (KST)"
         }
       ],
       "changelog": [
+        "v0.4.2: [차에서 듣기] 차량 모드: 화의 처음에 제목을 읽고, 하루 넘게 쉬었으면 지난 이야기부터 들려준다",
+        "v0.4.2: [차에서 듣기] 문단·기승전결 국면 사이에 쉼을 두고, 화 끝에 얻은 것을 읽은 뒤 다음 이야기로 이어 간다. 막의 끝에서는 멈춘다",
+        "v0.4.2: [차에서 듣기] 운전 중에는 이야기만 듣는다. 장비·룬·성격 카드는 건드리지 않고, 차를 세운 뒤 정리한다",
+        "v0.4.2: [안정성] 낭독하는 동안 화면이 꺼지지 않아, 화면이 꺼져 낭독이 끊기던 문제를 막는다",
         "v0.4.1: [천마회귀 1막 완성] 1~6화 및 막간 본편 정본화, 22인 등장인물 초상화 전량 적용",
         "v0.4.1: [게임 시스템] 5단계 경지, 룬 함 및 단약 중첩, 성품 장착/재분배, 수련 파밍, 악몽·지옥 다회차 지원",
         "v0.4.1: [음성 낭독] Supertonic 3 온디바이스 AI 음성 10종 지원"
       ],
-      "deployedAt": "2026-11-08 09:14 (KST)",
+      "deployedAt": "2026-11-08 17:05 (KST)",
       "speechEngine": "Supertonic 3 온디바이스 AI 성우 5종 (아라·하늘·다인·민준·태오) + 한국어 TTS"
     },
     {
@@ -229,5 +233,5 @@
       ]
     }
   ],
-  "deployedAt": "2026-11-08 09:14 (KST)"
+  "deployedAt": "2026-11-08 17:05 (KST)"
 }
