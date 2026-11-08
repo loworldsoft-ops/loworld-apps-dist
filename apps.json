@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T13:03:18.152Z",
+  "updatedAt": "2026-11-08T00:14:44.837Z",
   "notice": {
     "title": "천마회귀 1막 정본화 및 게임 시스템 전체 업데이트 안내",
     "description": "천마회귀 1막(1~6화 및 막간) 정본화와 전 막 등장인물 22인 초상화가 적용되었습니다. 룬 함(3→1 조합), 단약 중첩 복용, 가면 자동 전환, 성품 장착 및 무공 재분배, 여정 탭 반복 수련(파밍), 다회차(보통/악몽/지옥) 루프가 정식 탑재되었습니다."
@@ -16,19 +16,19 @@
       "targetOs": "Android 8.0+ (API 26+)",
       "offline": true,
       "badge": "유료 소설 (추가결제 없음)",
-      "updated": "2026-11-06",
+      "updated": "2026-11-08",
       "packages": [
         {
           "type": "release",
           "label": "정식 릴리즈 APK (단독 소설 앱)",
           "filename": "Novel_Cheonma_0.4.1_release.apk",
-          "size": "302.1 MB",
+          "size": "306.2 MB",
           "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Cheonma_0.4.1_release.apk",
           "primary": true,
           "version": "0.4.1",
           "versionCode": 6,
-          "builtAt": "2026-11-06 15:22 (KST)",
-          "deployedAt": "2026-11-06 15:23 (KST)"
+          "builtAt": "2026-11-08 09:13 (KST)",
+          "deployedAt": "2026-11-08 09:14 (KST)"
         }
       ],
       "changelog": [
@@ -36,8 +36,8 @@
         "v0.4.1: [게임 시스템] 5단계 경지, 룬 함 및 단약 중첩, 성품 장착/재분배, 수련 파밍, 악몽·지옥 다회차 지원",
         "v0.4.1: [음성 낭독] Supertonic 3 온디바이스 AI 음성 10종 지원"
       ],
-      "deployedAt": "2026-11-06 15:23 (KST)",
-      "speechEngine": "Supertonic 3 온디바이스 AI 음성 (여성 5·남성 5) + 안드로이드 TTS"
+      "deployedAt": "2026-11-08 09:14 (KST)",
+      "speechEngine": "Supertonic 3 온디바이스 AI 성우 5종 (아라·하늘·다인·민준·태오) + 한국어 TTS"
     },
     {
       "id": "novel-wuxia",
@@ -229,5 +229,5 @@
       ]
     }
   ],
-  "deployedAt": "2026-11-07 22:02 (KST)"
+  "deployedAt": "2026-11-08 09:14 (KST)"
 }
