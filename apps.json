@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-08T10:18:23.464Z",
+  "updatedAt": "2026-11-08T10:29:51.694Z",
   "notice": {
     "title": "천마회귀 1막 정본화 및 게임 시스템 전체 업데이트 안내",
     "description": "천마회귀 1막(1~6화 및 막간) 정본화와 전 막 등장인물 22인 초상화가 적용되었습니다. 룬 함(3→1 조합), 단약 중첩 복용, 가면 자동 전환, 성품 장착 및 무공 재분배, 여정 탭 반복 수련(파밍), 다회차(보통/악몽/지옥) 루프가 정식 탑재되었습니다."
@@ -9,8 +9,8 @@
       "id": "novel-cheonma",
       "nameKo": "천마회귀",
       "nameEn": "Heavenly Demon Returns (Interactive Wuxia)",
-      "version": "0.4.3",
-      "versionCode": 8,
+      "version": "0.4.4",
+      "versionCode": 9,
       "icon": "assets/icons/novel-cheonma.png",
       "summary": "【유료 단독 소설 • 인앱결제 없음】 세가의 고수에게 쓰러진 천마가 소년의 몸에서 깨어나 룬과 가면으로 다시 서는 인터랙티브 무협 서사 (완결 소장판)",
       "targetOs": "Android 8.0+ (API 26+)",
@@ -21,27 +21,27 @@
         {
           "type": "release",
           "label": "정식 릴리즈 APK (단독 소설 앱)",
-          "filename": "Novel_Cheonma_0.4.3_release.apk",
+          "filename": "Novel_Cheonma_0.4.4_release.apk",
           "size": "384.7 MB",
-          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Cheonma_0.4.3_release.apk",
+          "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Cheonma_0.4.4_release.apk",
           "primary": true,
-          "version": "0.4.3",
-          "versionCode": 8,
-          "builtAt": "2026-11-08 19:17 (KST)",
-          "deployedAt": "2026-11-08 19:17 (KST)"
+          "version": "0.4.4",
+          "versionCode": 9,
+          "builtAt": "2026-11-08 19:28 (KST)",
+          "deployedAt": "2026-11-08 19:29 (KST)"
         }
       ],
       "changelog": [
+        "v0.4.4: [장비에 따라 갈리는 이야기] 1~6화가 찬 무기(녹슨 단도·서역 장검)·옷·신발·룬어 「속역」·무공 조합(파행역맥)에 따라 다르게 펼쳐진다",
+        "v0.4.4: [이야기 보강] 무공 깨달음 장면 셋, 얻는 문장, 무공 조합과 룬어의 사연. 5화 패도의 길은 잡졸들의 눈을 바꾼다",
+        "v0.4.4: [기승전결] 모든 화에 起承轉結 네 국면, 얇던 국면 보강",
         "v0.4.3: [이야기 보강] 1막 여섯 화에 감동 장면을 쌓고 터뜨린다: 아두의 붉은 머리끈, 나눠 준 식은 죽, 설유의 손수건과 흰 매듭, 곡대가 지키던 아이들의 이름",
         "v0.4.3: [기승전결] 3·4화에 전환점(轉)을 세우고 얇던 승(承)을 늘렸다. 룬어 완성·경지 장면 다섯 편 추가",
         "v0.4.3: [도감] 인물 22인·물건 21종·무공 7종에 사랑과 희생의 줄기를 잇고, 흡수를 전제한 잘못된 안내를 바로잡았다",
         "v0.4.3: [대사] 호감·성향·출신에 따라 갈리는 대사와 말투 대사 확장",
-        "v0.4.2: [차에서 듣기] 차량 모드: 화의 처음에 제목을 읽고, 하루 넘게 쉬었으면 지난 이야기부터 들려준다",
-        "v0.4.2: [차에서 듣기] 문단·기승전결 국면 사이에 쉼을 두고, 화 끝에 얻은 것을 읽은 뒤 다음 이야기로 이어 간다. 막의 끝에서는 멈춘다",
-        "v0.4.2: [차에서 듣기] 운전 중에는 이야기만 듣는다. 장비·룬·성격 카드는 건드리지 않고, 차를 세운 뒤 정리한다",
-        "v0.4.2: [안정성] 낭독하는 동안 화면이 꺼지지 않아, 화면이 꺼져 낭독이 끊기던 문제를 막는다"
+        "v0.4.2: [차에서 듣기] 차량 모드: 화의 처음에 제목을 읽고, 하루 넘게 쉬었으면 지난 이야기부터 들려준다"
       ],
-      "deployedAt": "2026-11-08 19:17 (KST)",
+      "deployedAt": "2026-11-08 19:29 (KST)",
       "speechEngine": "Supertonic 3 온디바이스 AI 성우 5종 (아라·하늘·다인·민준·태오) + 한국어 TTS"
     },
     {
@@ -234,5 +234,5 @@
       ]
     }
   ],
-  "deployedAt": "2026-11-08 19:17 (KST)"
+  "deployedAt": "2026-11-08 19:29 (KST)"
 }
