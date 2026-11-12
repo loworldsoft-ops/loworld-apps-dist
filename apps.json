@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T13:53:29.700Z",
+  "updatedAt": "2026-11-12T14:51:00.004Z",
   "notice": {
     "title": "천마회귀 1막 정본화 및 게임 시스템 전체 업데이트 안내",
     "description": "천마회귀 1막(1~6화 및 막간) 정본화와 전 막 등장인물 22인 초상화가 적용되었습니다. 룬 함(3→1 조합), 단약 중첩 복용, 가면 자동 전환, 성품 장착 및 무공 재분배, 여정 탭 반복 수련(파밍), 다회차(보통/악몽/지옥) 루프가 정식 탑재되었습니다."
@@ -27,8 +27,8 @@
           "primary": true,
           "version": "0.4.5",
           "versionCode": 10,
-          "builtAt": "2026-11-12 22:52 (KST)",
-          "deployedAt": "2026-11-12 22:53 (KST)"
+          "builtAt": "2026-11-12 23:49 (KST)",
+          "deployedAt": "2026-11-12 23:50 (KST)"
         }
       ],
       "changelog": [
@@ -41,7 +41,7 @@
         "v0.4.3: [이야기 보강] 1막 여섯 화에 감동 장면을 쌓고 터뜨린다: 아두의 붉은 머리끈, 나눠 준 식은 죽, 설유의 손수건과 흰 매듭, 곡대가 지키던 아이들의 이름",
         "v0.4.3: [기승전결] 3·4화에 전환점(轉)을 세우고 얇던 승(承)을 늘렸다. 룬어 완성·경지 장면 다섯 편 추가"
       ],
-      "deployedAt": "2026-11-12 22:53 (KST)",
+      "deployedAt": "2026-11-12 23:50 (KST)",
       "speechEngine": "Supertonic 3 온디바이스 AI 성우 5종 (아라·하늘·다인·민준·태오) + 한국어 TTS"
     },
     {
@@ -168,12 +168,12 @@
           "label": "정식 릴리즈 APK (권장)",
           "filename": "StoryReader_0.6.4_release.apk",
           "size": "308.0 MB",
-          "builtAt": "2026-11-12 22:52 (KST)",
+          "builtAt": "2026-11-12 23:49 (KST)",
           "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/StoryReader_0.6.4_release.apk",
           "primary": true,
           "version": "0.6.4",
           "versionCode": 21,
-          "deployedAt": "2026-11-12 22:53 (KST)"
+          "deployedAt": "2026-11-12 23:50 (KST)"
         }
       ],
       "features": [
@@ -192,7 +192,7 @@
         "v0.6.1: [화면 통일] 읽는 화면·연결 카드 시트·도감 카드가 공통 테마(양피지·밝게·밤)를 함께 쓴다",
         "v0.6.1: [안정성] 낭독 중 앱이 종료되던 문제 수정"
       ],
-      "deployedAt": "2026-11-12 22:53 (KST)"
+      "deployedAt": "2026-11-12 23:50 (KST)"
     },
     {
       "id": "story-math",
@@ -234,5 +234,5 @@
       ]
     }
   ],
-  "deployedAt": "2026-11-12 22:53 (KST)"
+  "deployedAt": "2026-11-12 23:50 (KST)"
 }
