@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T00:07:09.963Z",
+  "updatedAt": "2026-11-12T12:40:59.180Z",
   "notice": {
     "title": "천마회귀 1막 정본화 및 게임 시스템 전체 업데이트 안내",
     "description": "천마회귀 1막(1~6화 및 막간) 정본화와 전 막 등장인물 22인 초상화가 적용되었습니다. 룬 함(3→1 조합), 단약 중첩 복용, 가면 자동 전환, 성품 장착 및 무공 재분배, 여정 탭 반복 수련(파밍), 다회차(보통/악몽/지옥) 루프가 정식 탑재되었습니다."
@@ -22,13 +22,13 @@
           "type": "release",
           "label": "정식 릴리즈 APK (단독 소설 앱)",
           "filename": "Novel_Cheonma_0.4.5_release.apk",
-          "size": "384.8 MB",
+          "size": "386.4 MB",
           "url": "https://github.com/loworldsoft-ops/loworld-apps-dist/releases/download/v2026.10/Novel_Cheonma_0.4.5_release.apk",
           "primary": true,
           "version": "0.4.5",
           "versionCode": 10,
-          "builtAt": "2026-11-12 09:01 (KST)",
-          "deployedAt": "2026-11-12 09:03 (KST)"
+          "builtAt": "2026-11-12 21:40 (KST)",
+          "deployedAt": "2026-11-12 21:40 (KST)"
         }
       ],
       "changelog": [
@@ -41,7 +41,7 @@
         "v0.4.3: [이야기 보강] 1막 여섯 화에 감동 장면을 쌓고 터뜨린다: 아두의 붉은 머리끈, 나눠 준 식은 죽, 설유의 손수건과 흰 매듭, 곡대가 지키던 아이들의 이름",
         "v0.4.3: [기승전결] 3·4화에 전환점(轉)을 세우고 얇던 승(承)을 늘렸다. 룬어 완성·경지 장면 다섯 편 추가"
       ],
-      "deployedAt": "2026-11-12 09:03 (KST)",
+      "deployedAt": "2026-11-12 21:40 (KST)",
       "speechEngine": "Supertonic 3 온디바이스 AI 성우 5종 (아라·하늘·다인·민준·태오) + 한국어 TTS"
     },
     {
@@ -234,5 +234,5 @@
       ]
     }
   ],
-  "deployedAt": "2026-11-12 09:03 (KST)"
+  "deployedAt": "2026-11-12 21:40 (KST)"
 }
